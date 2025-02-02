@@ -16,13 +16,14 @@
     padding: 10px 20px;
     border-radius: 5px;
     background-color: #1d25b9;
-    color: #ffffff;
+    color: #000000;
     font-size: 1rem;
     font-weight: bold;
     text-align: center;
     border: none;
     cursor: pointer;
     text-decoration: none;
+    margin-top: 20px;
     transition: background-color 0.3s ease;
 }
 
@@ -31,8 +32,9 @@
 }
 
 .btn-primary {
-    background-color: #007bff;
-    color: #ffffff;
+    background-color: white;
+    color: #000000;
+    margin-right: 10px;
 }
 
 .btn-primary:hover {
@@ -41,7 +43,7 @@
 
 .btn-secondary {
     background-color: #6c757d;
-    color: #ffffff;
+    color: #000000;
 }
 
 .btn-secondary:hover {

@@ -23,14 +23,14 @@ const Aboutme1 = () => {
                         <div className="grid lg:grid-cols-5 gap-8 items-start mb-16 py-5">
                             <div className="rounded-xl border bg-card text-card-foreground shadow lg:col-span-2 p-6 hover:shadow-md transition-shadow py-11">
                                 <div className="flex items-center gap-3 mb-6">
-                                    <div className="p-2 rounded-lg bg-primary/10">
+                                    <div className="p-2 rounded-lg bg-primary/10 bg-black">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-graduation-cap w-6 h-6 text-primary">
                                             <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path>
                                             <path d="M22 10v6"></path>
                                             <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
                                         </svg>
                                     </div>
-                                    <h3 className="inline-flex items-center text-2xl font-semibold">Background</h3>
+                                    <h3 className="inline-flex items-center text-2xl font-semibold ">Background</h3>
                                 </div>
                                 <p className="inline-flex items-center text-muted-foreground leading-relaxed">As a final-year Computer Engineering student at Rizvi College of Engineering, I am passionate about applying AI and data science to solve real-world problems. My expertise includes creating predictive models, exploring NLP for automating literature reviews, and developing scalable solutions in data science.</p>
                             </div>
