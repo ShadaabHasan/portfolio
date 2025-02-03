@@ -12,7 +12,7 @@ const Aboutme1 = () => {
                     </div>
                     <div className="container mx-auto">
                         <div className="text-center mb-20 relative">
-                            <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-2xl font-semibold transition-colors mb-4">
+                            <div className="inline-flex items-center rounded-md px-2.5 py-0.5 text-3xl font-semibold transition-colors mb-4">
                                 About Me
                             </div>
                             <h2 className="text-4xl md:text-5xl font-bold mb-6">
