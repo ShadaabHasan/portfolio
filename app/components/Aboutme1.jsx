@@ -20,7 +20,7 @@ const Aboutme1 = () => {
                             </h2>
                             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">Computer Engineering student and aspiring Data Scientist building innovative solutions powered by AI/ML and data-driven decision-making.</p>
                         </div>
-                        <div className="grid lg:grid-cols-5 gap-8 items-start mb-16 py-5">
+                        <div className="grid lg:grid-cols-5 gap-8 items-start mb-16">
                             <div className="rounded-xl border bg-card text-card-foreground shadow lg:col-span-2 p-6 hover:shadow-md transition-shadow py-11">
                                 <div className="flex items-center gap-3 mb-6">
                                     <div className="p-2 rounded-lg bg-primary/10 bg-black">
@@ -32,7 +32,7 @@ const Aboutme1 = () => {
                                     </div>
                                     <h3 className="inline-flex items-center text-2xl font-semibold ">Background</h3>
                                 </div>
-                                <p className="inline-flex items-center text-muted-foreground leading-relaxed">As a final-year Computer Engineering student at Rizvi College of Engineering, I am passionate about applying AI and data science to solve real-world problems. My expertise includes creating predictive models, exploring NLP for automating literature reviews, and developing scalable solutions in data science.</p>
+                                <p className="inline-flex items-center text-muted-foreground leading-relaxed text-l">As a final-year Computer Engineering student at Rizvi College of Engineering, I am passionate about applying AI and data science to solve real-world problems. My expertise includes creating predictive models, exploring NLP for automating literature reviews, and developing scalable solutions in data science.</p>
                             </div>
                             <div className="lg:col-span-3 grid sm:grid-cols-2 gap-3">
                                 <div className="rounded-xl border bg-card text-card-foreground shadow p-6 hover:shadow-md transition-shadow">
@@ -53,11 +53,11 @@ const Aboutme1 = () => {
                                         <h3 className="text-xl font-semibold">AI &amp; Machine Learning</h3>
                                     </div>
                                     <div className="flex flex-wrap gap-2">
-                                        <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-purple-500/10 text-purple-500 hover:scale-105 transition-transform">Deep Learning</div>
+                                        {/* <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-purple-500/10 text-purple-500 hover:scale-105 transition-transform">Deep Learning</div> */}
                                         <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-purple-500/10 text-purple-500 hover:scale-105 transition-transform">NLP</div>
-                                        {/* <!-- <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-purple-500/10 text-purple-500 hover:scale-105 transition-transform">GenAI</div> */}
-                                        {/* <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-purple-500/10 text-purple-500 hover:scale-105 transition-transform">LLMs</div>
-                                        <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-purple-500/10 text-purple-500 hover:scale-105 transition-transform">RAG</div> --> */}
+                                        <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-purple-500/10 text-purple-500 hover:scale-105 transition-transform">Data Science</div>
+                                        <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-purple-500/10 text-purple-500 hover:scale-105 transition-transform">Machine Learning</div>
+                                        {/* <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-purple-500/10 text-purple-500 hover:scale-105 transition-transform">RAG</div> */}
                                     </div>
                                 </div>
                                 <div className="rounded-xl border bg-card text-card-foreground shadow p-6 hover:shadow-md transition-shadow">
@@ -72,10 +72,10 @@ const Aboutme1 = () => {
                                     </div>
                                     <div className="flex flex-wrap gap-2">
                                         <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-green-500/10 text-green-500 hover:scale-105 transition-transform">Full-Stack</div>
-                                        {/* <!-- <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-green-500/10 text-green-500 hover:scale-105 transition-transform">API Design</div> -->
-                                        <!-- <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-green-500/10 text-green-500 hover:scale-105 transition-transform">CI/CD</div> -->
-                                        <!-- <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-green-500/10 text-green-500 hover:scale-105 transition-transform">DevOps</div> -->
-                                        <!-- <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-green-500/10 text-green-500 hover:scale-105 transition-transform">TDD</div> --> */}
+                                        <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-green-500/10 text-green-500 hover:scale-105 transition-transform">Django</div>
+                                        {/* <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-green-500/10 text-green-500 hover:scale-105 transition-transform"></div>  */}
+                                        {/* <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-green-500/10 text-green-500 hover:scale-105 transition-transform">DevOps</div> */}
+                                        {/* <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-green-500/10 text-green-500 hover:scale-105 transition-transform">TDD</div>  */}
                                     </div>
                                 </div>
                                 <div className="rounded-xl border bg-card text-card-foreground shadow p-6 hover:shadow-md transition-shadow">
@@ -90,10 +90,11 @@ const Aboutme1 = () => {
                                     </div>
                                     <div className="flex flex-wrap gap-2">
                                         <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-orange-500/10 text-orange-500 hover:scale-105 transition-transform">Python</div>
-                                        {/* <!-- <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-orange-500/10 text-orange-500 hover:scale-105 transition-transform">TypeScript</div> -->
-                                        <!-- <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-orange-500/10 text-orange-500 hover:scale-105 transition-transform">Node.js</div> --> */}
+                                        <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-orange-500/10 text-orange-500 hover:scale-105 transition-transform">Tailwind css</div> 
+                                        <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-orange-500/10 text-orange-500 hover:scale-105 transition-transform">SQL</div> 
                                         <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-orange-500/10 text-orange-500 hover:scale-105 transition-transform">React</div>
                                         <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-orange-500/10 text-orange-500 hover:scale-105 transition-transform">Next.js</div>
+                                        {/* <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-orange-500/10 text-orange-500 hover:scale-105 transition-transform">Firebase</div> */}
                                     </div>
                                 </div>
                             </div>

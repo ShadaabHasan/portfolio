@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Home1 from "./components/Home1";
 import Aboutme1 from "./components/Aboutme1";
 import FeaturedProjects from "./components/FeaturedProjects";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -12,7 +13,8 @@ export default function Home() {
       <Navbar />
       <Home1 />
       <Aboutme1 />
-      {/* <FeaturedProjects /> */}
+      <FeaturedProjects />
+      <Footer />
     </div>
     
     </>
