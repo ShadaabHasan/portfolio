@@ -8,11 +8,11 @@ const navbar = () => {
           <div className="flex h-16 items-center justify-between">
             <a className='text-xl font-bold' href='/'>Shadaab Hasan | Portfolio </a>
               <div className="hidden md:flex items-center space-x-4">
-                <a className=" " href="/">Home</a>
+                <a className="" href="#home">Home</a>
                 <span className="">|</span>
-                <a className="" href="/about/">About</a>
+                <a className="" href="#Aboutme1">About</a>
                 <span className="">|</span>
-                <a className="" href="/projects/">Projects</a>
+                <a className="" href="#featuredproj">Projects</a>
                 <span className="">|</span>
                 <a className="" href="/contact/">Contact</a>
                 {/* <span className="">|</span> */}

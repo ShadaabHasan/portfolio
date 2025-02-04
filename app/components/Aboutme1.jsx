@@ -3,24 +3,24 @@ import React from 'react'
 const Aboutme1 = () => {
   return (
     <>
-      <main className="flex-grow container mx-auto px-4 pt-16 pb-8">
-            <main className="flex min-h-screen flex-col">
+      <main className="flex-grow container mx-auto px-4 pt-16 padding-top-aboutme" id='Aboutme1'>
+            <main className="flex flex-col">
                 <div className="relative overflow-hidden">
                     <div className="">
                         <div className="absolute right-0 top-0 w-96 h-10"></div>
                         <div className="absolute left-0 bottom-0 w-96 h-10"></div>
                     </div>
                     <div className="container mx-auto">
-                        <div className="text-center mb-20 relative">
+                        <div className="text-center mb-14 relative">
                             <div className="inline-flex items-center rounded-md px-2.5 py-0.5 text-3xl font-semibold transition-colors mb-4">
                                 About Me
                             </div>
-                            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                            <h2 className="text-4xl md:text-5xl font-bold mb-8">
                                 Transforming complex data into useful insights 
                             </h2>
-                            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">Computer Engineering student and aspiring Data Scientist building innovative solutions powered by AI/ML and data-driven decision-making.</p>
+                            <p className="text-lg text-muted-foreground max-w-2xl mx-auto grey">Computer Engineering student and aspiring Data Scientist building innovative solutions powered by AI/ML and data-driven decision-making.</p>
                         </div>
-                        <div className="grid lg:grid-cols-5 gap-8 items-start mb-16">
+                        <div className="grid lg:grid-cols-5 gap-8 items-start mb-12">
                             <div className="rounded-xl border bg-card text-card-foreground shadow lg:col-span-2 p-6 hover:shadow-md transition-shadow py-11">
                                 <div className="flex items-center gap-3 mb-6">
                                     <div className="p-2 rounded-lg bg-primary/10 bg-black">
@@ -53,11 +53,9 @@ const Aboutme1 = () => {
                                         <h3 className="text-xl font-semibold">AI &amp; Machine Learning</h3>
                                     </div>
                                     <div className="flex flex-wrap gap-2">
-                                        {/* <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-purple-500/10 text-purple-500 hover:scale-105 transition-transform">Deep Learning</div> */}
                                         <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-purple-500/10 text-purple-500 hover:scale-105 transition-transform">NLP</div>
                                         <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-purple-500/10 text-purple-500 hover:scale-105 transition-transform">Data Science</div>
                                         <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-purple-500/10 text-purple-500 hover:scale-105 transition-transform">Machine Learning</div>
-                                        {/* <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-purple-500/10 text-purple-500 hover:scale-105 transition-transform">RAG</div> */}
                                     </div>
                                 </div>
                                 <div className="rounded-xl border bg-card text-card-foreground shadow p-6 hover:shadow-md transition-shadow">
@@ -73,9 +71,6 @@ const Aboutme1 = () => {
                                     <div className="flex flex-wrap gap-2">
                                         <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-green-500/10 text-green-500 hover:scale-105 transition-transform">Full-Stack</div>
                                         <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-green-500/10 text-green-500 hover:scale-105 transition-transform">Django</div>
-                                        {/* <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-green-500/10 text-green-500 hover:scale-105 transition-transform"></div>  */}
-                                        {/* <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-green-500/10 text-green-500 hover:scale-105 transition-transform">DevOps</div> */}
-                                        {/* <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-green-500/10 text-green-500 hover:scale-105 transition-transform">TDD</div>  */}
                                     </div>
                                 </div>
                                 <div className="rounded-xl border bg-card text-card-foreground shadow p-6 hover:shadow-md transition-shadow">
@@ -94,19 +89,9 @@ const Aboutme1 = () => {
                                         <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-orange-500/10 text-orange-500 hover:scale-105 transition-transform">SQL</div> 
                                         <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-orange-500/10 text-orange-500 hover:scale-105 transition-transform">React</div>
                                         <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-orange-500/10 text-orange-500 hover:scale-105 transition-transform">Next.js</div>
-                                        {/* <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-orange-500/10 text-orange-500 hover:scale-105 transition-transform">Firebase</div> */}
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="text-center relative z-10">
-                            <a className="inline-flex h-12 items-center justify-center rounded-lg bg-primary px-8 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors group pointer-events-auto" href="/about/">
-                                Learn More About Me
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-right w-4 h-4 ml-2 transition-transform group-hover:translate-x-1">
-                                    <path d="M5 12h14"></path>
-                                    <path d="m12 5 7 7-7 7"></path>
-                                </svg>
-                            </a>
                         </div>
                     </div>
                 </div> 

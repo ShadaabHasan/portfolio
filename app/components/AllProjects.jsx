@@ -1,10 +1,10 @@
-import Link from 'next/link'
 import React from 'react'
+import { Link } from "react-router-dom"
 
-const FeaturedProjects = () => {
+const AllProjects = () => {
   return (
     <>
-      <section className="border-b padding-top-featuredproj" id='featuredproj'>
+        <section className="">
                     <div className="container mx-auto">
                         <div className="max-w-4xl mx-auto text-center">
                             <h2 className="text-3xl md:text-4xl font-bold">Featured Projects</h2>
@@ -86,13 +86,13 @@ const FeaturedProjects = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="mt-12 text-center padding-top-portfolio-button">
-                            <Link to={"/AllProjects"} className="inline-flex h-12 items-center justify-center rounded-lg border border-input bg-background px-8 text-sm font-medium hover:bg-accent hover:text-accent-foreground transition-colors" href='/AllProjects'>View All Projects</Link>
-                        </div>
-                    </div>
-                </section> 
+                    <div className="mt-12 text-center padding-top-portfolio-button">
+                <a className="inline-flex h-12 items-center justify-center rounded-lg border border-input bg-background px-8 text-sm font-medium hover:bg-accent hover:text-accent-foreground transition-colors" href="/projects/">View All Projects</a>
+            </div>
+        </div>
+    </section>
     </>
   )
 }
 
-export default FeaturedProjects
+export default AllProjects
