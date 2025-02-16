@@ -5,7 +5,6 @@ const Home = () => {
     <>
         <div className="relative flex flex-col" id="home">
        <div className="main-section">
-       {/* <h1 className="mt-0 flex font-bold text-5xl bg-gradient-to-br from-blue-600 to-red-600 bg-clip-text text-transparent ">Hi, I'm Shadaab Hasan</h1> */}
             <h1 className="mt-0 flex font-bold text-5xl ">Hi, I'm Shadaab Hasan</h1>
             <p className="mt-5 text-lg md:text-xl lg:text-xl text-muted-foreground max-w-3xl">A passionate and aspiring Data Scientist</p>
             <p className='mt-4 grey'>Check out my work or connect with me:</p>

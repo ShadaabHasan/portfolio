@@ -47,6 +47,11 @@
     margin-left: 7px;
 }
 
+.btn-secondary-contact {
+    background-color: #6c757d;
+    color: #ffffff;
+}
+
 .btn-secondary:hover {
     background-color: #5a6268;
 }
@@ -79,3 +84,13 @@
     padding-top: 110px;
 }
 
+.padding-top-contact{
+    padding-top: 7rem;
+    padding-bottom: 25px;
+    padding-left: 10rem;
+}
+
+.padding-left-contact{
+    padding-left: 10.5rem;
+    margin-right: 30rem;
+}
