@@ -9,8 +9,8 @@ const Home = () => {
             <p className="mt-5 text-lg md:text-xl lg:text-xl text-muted-foreground max-w-3xl">A passionate and aspiring Data Scientist</p>
             <p className='mt-4 grey'>Check out my work or connect with me:</p>
             <div>
-                <a href="#projects" className="btn btn-primary mt-2">Projects</a>
-                <a href="#contact" className="btn btn-secondary">Contact Me</a>
+                <a href="/#featuredproj" className="btn btn-primary mt-2">Projects</a>
+                <a href="/Contact" className="btn btn-secondary">Contact Me</a>
             </div>
       </div> 
     </div>

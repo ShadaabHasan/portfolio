@@ -14,9 +14,9 @@ const Footer = () => {
                         <div className="space-y-4">
                             <h3 className="text-lg font-semibold">Quick Links</h3>
                             <nav className="flex flex-col space-y-2">
-                                <a className="text-sm text-foreground/60 hover:text-foreground" href="/Aboutme1/">About</a>
-                                <a className="text-sm text-foreground/60 hover:text-foreground" href="/FeaturedProjects/">Projects</a>
-                                <a className="text-sm text-foreground/60 hover:text-foreground" href="/contact/">Contact</a>
+                                <a className="text-sm text-foreground/60 hover:text-foreground" href="/#Aboutme1">About</a>
+                                <a className="text-sm text-foreground/60 hover:text-foreground" href="/#featuredproj">Projects</a>
+                                <a className="text-sm text-foreground/60 hover:text-foreground" href="/Contact">Contact</a>
                             </nav>
                         </div>
                         <div className="space-y-4">

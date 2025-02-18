@@ -21,7 +21,7 @@ const FeaturedProjects = () => {
                                         <div>
                                             <h3 className="text-xl font-semibold mb-2">Portfolio Website</h3>
                                             {/* <div className="inline-block rounded-full bg-primary/10 px-2 py-1 text-xs text-primary mb-2">Featured Project</div> */}
-                                            <p className="text-muted-foreground">A modern and dynamic portfolio website built with Next.js, featuring a sleek UI, fast performance, and seamless navigation to showcase projects, skills, and experience effectively.</p>
+                                            <p className="text-muted-foreground">A modern portfolio website built with Next.js to showcase projects, skills, and experience.</p>
                                         </div>
                                         <div className="flex flex-wrap gap-2">
                                             <span className="inline-flex items-center rounded-full font-medium bg-primary/10 text-primary hover:bg-primary/20 transition-colors border border-primary/20 text-xs px-2 py-1">Next.js</span>
@@ -45,7 +45,7 @@ const FeaturedProjects = () => {
                                         <div>
                                             <h3 className="text-xl font-semibold mb-2">Skin Cancer Detection System</h3>
                                             {/* <div className="inline-block rounded-full bg-primary/10 px-2 py-1 text-xs text-primary mb-2">Featured Project</div> */}
-                                            <p className="text-muted-foreground">AA computer vision project for early skin cancer detection analyzes skin lesion images through acquisition, preprocessing, and feature extraction (color, texture, shape). Using ML/DL algorithms like CNNs, the model is trained on labeled datasets, validated, and tested for accuracy and generalization to ensure reliable performance.</p>
+                                            <p className="text-muted-foreground">An ML project for skin cancer detection using image analysis and feature extraction.</p>
                                         </div>
                                         <div className="flex flex-wrap gap-2">
                                             <span className="inline-flex items-center rounded-full font-medium bg-primary/10 text-primary hover:bg-primary/20 transition-colors border border-primary/20 text-xs px-2 py-1">Python</span>
@@ -69,13 +69,13 @@ const FeaturedProjects = () => {
                                         <div>
                                             <h3 className="text-xl font-semibold mb-2">Startup Sage</h3>
                                             {/* <div className="inline-block rounded-full bg-primary/10 px-2 py-1 text-xs text-primary mb-2">Featured Project</div> */}
-                                            <p className="text-muted-foreground">An all-encompassing companion for startup success. This application was designed and developed with a singular goal in mind: to empower startups and businesses on their journey to growth and prosperity.</p>
+                                            <p className="text-muted-foreground">An all-in-one app designed to empower startups and drive their growth and success.</p>
                                         </div>
                                         <div className="flex flex-wrap gap-2">
                                             <span className="inline-flex items-center rounded-full font-medium bg-primary/10 text-primary hover:bg-primary/20 transition-colors border border-primary/20 text-xs px-2 py-1">Python</span>
                                             <span className="inline-flex items-center rounded-full font-medium bg-primary/10 text-primary hover:bg-primary/20 transition-colors border border-primary/20 text-xs px-2 py-1">Flutter</span>
                                             <span className="inline-flex items-center rounded-full font-medium bg-primary/10 text-primary hover:bg-primary/20 transition-colors border border-primary/20 text-xs px-2 py-1">TensorFlow</span>
-                                            <span className="inline-flex items-center rounded-full font-medium bg-primary/10 text-primary hover:bg-primary/20 transition-colors border border-primary/20 text-xs px-2 py-1">Firebase</span>
+                                            {/* <span className="inline-flex items-center rounded-full font-medium bg-primary/10 text-primary hover:bg-primary/20 transition-colors border border-primary/20 text-xs px-2 py-1">Firebase</span> */}
                                             <span className="inline-flex items-center rounded-full font-medium bg-primary/10 text-primary hover:bg-primary/20 transition-colors border border-primary/20 text-xs px-2 py-1">Flask</span>
                                             <span className="inline-flex items-center rounded-full font-medium bg-primary/10 text-primary hover:bg-primary/20 transition-colors border border-primary/20 text-xs px-2 py-1">Machine Learning</span>
                                         </div>

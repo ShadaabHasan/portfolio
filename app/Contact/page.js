@@ -26,11 +26,11 @@ const page = () => {
     <Navbar />
     
     <div className='min-h-screen bg-gradient-to-br from-slate-900 to-slate-700 text-white'>
-      <div className='text-9xl padding-top-contact'>
-        Contact Me
+      <div className='text-8xl padding-top-contact'>
+        Get in touch
       </div>
-      <div className='text-4xl padding-left-contact text-gray-500'>
-      Want to get in touch? Fill out the form below and I'll get back to you as soon as possible.
+      <div className='text-2xl padding-left-contact text-gray-500'>
+      Fill out the form below and I'll get back to you as soon as possible.
       </div>
       <div className='padding-left-contact'>
         <form onSubmit={handleSubmit(onSubmit)} className="w-full max-w mt-9">
