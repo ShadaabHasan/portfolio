@@ -20,7 +20,7 @@ const Aboutme1 = () => {
                             </h2>
                             <p className="text-lg text-muted-foreground max-w-2xl mx-auto grey">Computer Engineering student and aspiring Data Scientist building innovative solutions powered by AI/ML and data-driven decision-making.</p>
                         </div>
-                        <div className="grid lg:grid-cols-5 gap-8 items-start mb-12">
+                        <div className="grid lg:grid-cols-5 gap-8 items-start mb-12 m-10">
                             <div className="rounded-xl border bg-card text-card-foreground shadow lg:col-span-2 p-6 hover:shadow-md transition-shadow py-11">
                                 <div className="flex items-center gap-3 mb-6">
                                     <div className="p-2 rounded-lg bg-primary/10 bg-black">

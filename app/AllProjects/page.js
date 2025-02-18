@@ -2,12 +2,13 @@
 
 import React from 'react'
 import Navbar from "../components/Navbar";
+import Footer from '../components/Footer';
 
 const AllProject = () => {
   return (
     <>
     <Navbar/>
-    <div className='min-h-screen bg-gradient-to-br from-slate-900 to-rose-800 text-white'>
+    <div className='min-h-screen bg-gradient-to-br from-slate-900 to-rose-800 text-white pb-20'>
         <div className="container mx-auto padding-top-project">
             <div className="max-w-4xl mx-auto text-center">
                 <h2 className="text-3xl md:text-4xl font-bold">All Projects</h2>
@@ -136,6 +137,9 @@ const AllProject = () => {
                 </div>
             </div>
         </div>
+    </div>
+    <div className='red-footer text-white'>
+    <Footer />
     </div>
     </>
   )

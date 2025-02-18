@@ -2,25 +2,25 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <>
-      <footer className="grey-footer">
-                <div className="container mx-auto px-4 py-8">
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div className=''>
+      <footer className="mx-20 py-5">
+                <div className="container py-8 mx-auto">
+                    <div className="grid md:grid-cols-6">
                         <div className="space-y-4">
-                            <h3 className="text-lg font-semibold">Portfolio</h3>
+                            <h3 className="text-2xl font-semibold">Portfolio</h3>
                             <p className="text-sm text-foreground/60">
                             2025 Shadaab Hasan.</p>
                         </div>
                         <div className="space-y-4">
-                            <h3 className="text-lg font-semibold">Quick Links</h3>
+                            <h3 className="text-2xl font-semibold">Quick Links</h3>
                             <nav className="flex flex-col space-y-2">
-                                <a className="text-sm text-foreground/60 hover:text-foreground" href="/#Aboutme1">About</a>
-                                <a className="text-sm text-foreground/60 hover:text-foreground" href="/#featuredproj">Projects</a>
-                                <a className="text-sm text-foreground/60 hover:text-foreground" href="/Contact">Contact</a>
+                                <a className="text-sm text-foreground/60 hover:text-foreground underline" href="/#Aboutme1">About</a>
+                                <a className="text-sm text-foreground/60 hover:text-foreground underline" href="/#featuredproj">Projects</a>
+                                <a className="text-sm text-foreground/60 hover:text-foreground underline" href="/Contact">Contact</a>
                             </nav>
                         </div>
                         <div className="space-y-4">
-                            <h3 className="text-lg font-semibold">Connect</h3>
+                            <h3 className="text-2xl font-semibold">Connect</h3>
                             <div className="flex space-x-4">
                                 <a href="https://github.com/ShadaabHasan" target="_blank" rel="noopener noreferrer" className="text-foreground/60 hover:text-foreground" aria-label="GitHub">
                                     <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-5 h-5">
@@ -44,7 +44,7 @@ const Footer = () => {
                 </div>
             </footer>
 
-    </>
+    </div>
   )
 }
 

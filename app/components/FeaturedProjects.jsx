@@ -4,13 +4,13 @@ import React from 'react'
 const FeaturedProjects = () => {
   return (
     <>
-      <section className="border-b padding-top-featuredproj" id='featuredproj'>
+      <section className="padding-top-featuredproj" id='featuredproj'>
                     <div className="container mx-auto">
                         <div className="max-w-4xl mx-auto text-center">
                             <h2 className="text-3xl md:text-4xl font-bold">Featured Projects</h2>
                             <p className="mt-4 text-lg text-muted-foreground grey">A showcase of my recent projects, demonstrating my skills in AI, machine learning, and more.</p>
                         </div>
-                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-6 p-5">
+                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-6 p-5 mx-10">
                             <div className="h-full">
                                 <div className="bg-card rounded-lg shadow-lg overflow-hidden h-full flex flex-col">
                                     <div className="relative">
