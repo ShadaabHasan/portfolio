@@ -30,6 +30,7 @@ export default function Home() {
   }, []);
   return (
     <>
+    
     <Navbar />
     <div className="total-bg text-white">
     <div className={`transition-all duration-300 ${isBottom ? "m-5" : "m-0"}`}>

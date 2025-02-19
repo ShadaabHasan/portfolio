@@ -13,7 +13,7 @@ const Aboutme1 = () => {
                     <div className="container mx-auto">
                         <div className="text-center mb-14 relative">
                             <div className="inline-flex items-center rounded-md px-2.5 py-0.5 text-3xl font-semibold transition-colors mb-4">
-                                About Me
+                                {"{About Me}"}
                             </div>
                             <h2 className="text-4xl md:text-5xl font-bold mb-8">
                                 Transforming complex data into useful insights 

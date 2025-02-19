@@ -2,23 +2,46 @@
 
 import React from 'react'
 import { useForm } from 'react-hook-form'
-import { useRef } from 'react';
+// import { useRef } from 'react';
 import Navbar from "../components/Navbar";
 
 
-
 const page = () => {
-  const { register, handleSubmit, formState: { errors } } = useForm();
-  const onSubmit = data => console.log(data);
-  console.log(errors);
-  const textAreaRef = useRef(null);
+  
+  const { register, formState: { errors } } = useForm();
+  // const onSubmit = data => console.log(data);
+  // console.log(errors);
+  // const textAreaRef = useRef(null);
 
   const autoExpand = (event) => {
     const textarea = event.target; 
     textarea.style.height = "auto";  // Reset height
     textarea.style.height = `${textarea.scrollHeight}px`; // Expand to fit content
   };
- 
+
+  async function handleSubmit(event) {
+  event.preventDefault();
+  const formData = {
+    name: event.target.name.value,
+    email: event.target.email.value,
+    message: event.target.message.value,
+  };
+
+  try {
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
+
+    const data = await response.json();
+    alert(data.message);
+  } catch (error) {
+    console.error("Error:", error);
+    alert("Something went wrong!");
+  }
+}
+  
   
 
   return (
@@ -27,32 +50,40 @@ const page = () => {
     
     <div className='min-h-screen bg-gradient-to-br from-slate-900 to-slate-700 text-white'>
       <div className='text-8xl padding-top-contact'>
-        Get in touch
+        <p>{"{Get in touch}"}</p>
       </div>
       <div className='text-2xl padding-left-contact text-gray-500'>
       Fill out the form below and I'll get back to you as soon as possible.
       </div>
       <div className='padding-left-contact'>
-        <form onSubmit={handleSubmit(onSubmit)} className="w-full max-w mt-9">
+        <form className="w-full max-w mt-9" onSubmit={handleSubmit}>
           <div className="mb-4">
             <label className="block text-gray-300"></label>
-            <input type="text" {...register("name", { required: true })} className="w-full bg-transparent py-2 mt-3 rounded border-b-2 border-gray-500 text-white focus:outline-none focus:ring-0" placeholder="Full Name"/>
+            <input type="text" {...register("name", { required: true })} 
+            className="w-full bg-transparent py-2 mt-3 rounded border-b-2 border-gray-500 text-white focus:outline-none focus:ring-0" 
+            placeholder="Full Name"
+            />
             {errors.name && <p className="text-red-500 text-sm">Name is required.</p>}
           </div>
 
           <div className="mb-4">
             <label className="block text-gray-300"></label>
-            <input type="email" {...register("email", { required: true })} className="w-full py-2 mt-3 bg-transparent rounded border-b-2 border-gray-500 text-white focus:outline-none focus:ring-0" placeholder="your.email@example.com"/>
+            <input type="email" {...register("email", { required: true })} 
+            className="w-full py-2 mt-3 bg-transparent rounded border-b-2 border-gray-500 text-white focus:outline-none focus:ring-0" 
+            placeholder="your.email@example.com"
+            />
             {errors.email && <p className="text-red-500 text-sm">Email is required.</p>}
           </div>
 
           <div className="mb-4">
             <label className="block text-gray-300"></label>
             <textarea
-              ref={textAreaRef} {...register("message", { required: true })} className="w-full py-2 mt-3 rounded bg-transparent border-b-2 border-gray-500 text-white transition-all resize-none overflow-hidden focus:outline-none focus:ring-0"
+               {...register("message", { required: true })} 
+               className="w-full py-2 mt-3 rounded bg-transparent border-b-2 border-gray-500 text-white transition-all resize-none overflow-hidden focus:outline-none focus:ring-0"
               rows="1"
               onInput={autoExpand}
               placeholder="Your message..."
+              
             ></textarea>
 
           </div>

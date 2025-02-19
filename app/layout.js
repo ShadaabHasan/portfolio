@@ -1,3 +1,4 @@
+// 'use client'
 // import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -14,6 +15,9 @@ const inter = Inter({
 export const metadata = {
   title: "Shadaab Hasan | Portfolio",
   description: "",
+  icons: {
+    icon:"/favicon.ico"
+  },
 };
 
 export default function RootLayout({ children }) {
