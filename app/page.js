@@ -6,14 +6,21 @@ import Aboutme1 from "./components/Aboutme1";
 import FeaturedProjects from "./components/FeaturedProjects";
 import Footer from "./components/Footer";
 import Scrollup from "./components/Scrollup";
+// import { usePathname } from "next/navigation";
+
 
 import { useEffect, useState } from "react";
 
 // export default function ScrollEffectComponent() {
   
 
-
 export default function Home() {
+  // const pathname = usePathname();
+  // const pageClass =
+  // // pathname === "/" ? "home-page" :
+  // pathname === "/AllProjects" ? "projects-page" :
+  // pathname === "/contact" ? "contact-page" : "";
+
   const [isBottom, setIsBottom] = useState(false);
 
   useEffect(() => {

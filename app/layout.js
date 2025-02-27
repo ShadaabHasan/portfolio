@@ -3,6 +3,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 
+
 const inter = Inter({
   subsets: ["latin"]
 });
@@ -20,7 +21,13 @@ export const metadata = {
   },
 };
 
+
+
 export default function RootLayout({ children }) {
+
+
+  // Define page-specific classes
+ 
   return (
     <html lang="en" className="scroll-smooth">
       <body

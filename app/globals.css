@@ -4,28 +4,54 @@
 
 .main-section {
     display: flex;
+    flex-direction: row;
+    /* align-items: start;
+    justify-content: start; */
+    min-height: 610px;
+    padding: 0px;
+    /* width: 1/2; */
+}
+
+.main-section-scroll {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 105vh;
+    /* min-height: 105vh; */
     padding: 0px;
 }
+
+/* .main-section-image{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+} */
 
 ::-webkit-scrollbar {
     width: 5px;
   }
   
   ::-webkit-scrollbar-thumb {
-    background: rgb(6 78 59); /* Slightly transparent */
+    background: rgb(73, 73, 73); /* Slightly transparent */
     border-radius: 10px;
   }
   
   ::-webkit-scrollbar-track {
+    /* background: rgb(72, 97, 81); */
     background: grey;
   }
+
+  /* .projects-page ::-webkit-scrollbar-thumb {
+    background: #50040f; 
+  } */
+  
+  /* Contact Page Scrollbar */
+  /* .contact-page ::-webkit-scrollbar-thumb {
+    background: #3357ff; Blue
+  } */
   
   .total-bg{
-    background-color: #0f6f56;
+    background-color: #00261c;
   }
 
 
@@ -46,7 +72,7 @@
 }
 
 .btn:hover {
-    background-color: #1ea9d7;
+    background-color: #0f6f56;
 }
 
 .btn-primary {
@@ -56,7 +82,8 @@
 }
 
 .btn-primary:hover {
-    background-color: #0056b3;
+    background-color: #0f6f56;
+    color: white;
 }
 
 .btn-secondary {
@@ -71,7 +98,8 @@
 }
 
 .btn-secondary:hover {
-    background-color: #5a6268;
+    background-color: #37393b;
+    
 }
 
 .padding-bottom-background{
@@ -104,7 +132,7 @@
 }
 
 .red-footer{
-    background-color: #632733;
+    background-color: #410511;
 }
 
 .padding-top-aboutme{
@@ -128,4 +156,24 @@
 
 .padding-top-project{
     padding-top: 7rem;
+}
+
+@keyframes animate {
+    0% {
+        stroke-dashoffset: 0
+    }
+
+    to {
+        stroke-dashoffset: 12433.8193359375
+    }
+}
+
+@keyframes pulse {
+    50% {
+        opacity: .5
+    }
+}
+.path {
+    stroke-dasharray: 500px 100px;
+    animation: animate 100s linear infinite alternate-reverse
 }
