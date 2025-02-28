@@ -28,9 +28,9 @@ const Home = () => {
             >
               <defs>
                 <linearGradient id="paint-linear" x1="1272.23" y1="479.474" x2="506.242" y2="-216.277" gradientUnits="userSpaceOnUse">
-                  <stop stopColor="#27b173" />
-                  <stop offset="0.619553" stopColor="#1a663f" />
-                  <stop offset="0.93102" stopColor="#26312d" />
+                  <stop stopColor="#ff00ff " />
+                  <stop offset="0.619553" stopColor="#54a0ff" />
+                  <stop offset="0.93102" stopColor="#1dd1a1" />
                 </linearGradient>
                 <clipPath id="clip0">
                   <rect width="1273" height="906" fill="white" />

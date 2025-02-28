@@ -93,6 +93,15 @@ const Aboutme1 = () => {
                                 </div>
                             </div>
                         </div>
+                        <div className="text-center relative z-10">
+                            <a className="inline-flex h-12 items-center justify-center rounded-lg bg-primary px-8 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors group pointer-events-auto" href="/AboutMe">
+                                Learn More About Me
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-right w-4 h-4 ml-2 transition-transform group-hover:translate-x-1">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 </div> 
             </main>
