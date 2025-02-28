@@ -4,6 +4,8 @@ import React from 'react'
 import { useForm } from 'react-hook-form'
 // import { useRef } from 'react';
 import Navbar from "../components/Navbar";
+import Footer from '../components/Footer';
+import { useEffect, useState } from "react";
 
 
 const page = () => {
@@ -42,13 +44,27 @@ const page = () => {
   }
 }
   
-  
+ const [isBottom, setIsBottom] = useState(false);
+         
+           useEffect(() => {
+             const handleScroll = () => {
+               const scrollPosition = window.innerHeight + window.scrollY;
+               const pageHeight = document.documentElement.scrollHeight;
+               
+               // Check if the user has reached the bottom
+               setIsBottom(scrollPosition >= pageHeight - 100);
+             };
+         
+             window.addEventListener("scroll", handleScroll);
+             return () => window.removeEventListener("scroll", handleScroll);  }, []); 
 
   return (
     <>
     <Navbar />
-    
-    <div className='min-h-screen bg-gradient-to-br from-slate-900 to-fuchsia-900 text-white'>
+    <div className='purple-footer text-white'>
+    <div className={`transition-all duration-300 ${isBottom ? "m-5" : "m-0"}`}>
+
+    <div className='min-h-screen bg-gradient-to-br from-slate-900 to-fuchsia-900 text-white rounded-3xl'>
       <div className='text-8xl padding-top-contact'>
         <p>{"{Get in touch}"}</p>
       </div>
@@ -112,8 +128,12 @@ const page = () => {
                             </div>
         </form>
       </div>
+
     </div>
-      
+    </div>
+    <Footer />
+    
+    </div>
     </>
   )
 }

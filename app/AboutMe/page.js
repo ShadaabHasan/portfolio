@@ -24,7 +24,7 @@ const page = () => {
   return (
     <>
       <Navbar />
-      <div className='purple-footer text-white'>
+      <div className='black-footer text-white'>
         <div className={`transition-all duration-300 ${isBottom ? "m-5" : "m-0"}`}>
             <div className='bg-gradient-to-br from-gray-900 to-slate-800 rounded-b-3xl text-white pb-20'>
                 <div className="container mx-auto padding-top-project">

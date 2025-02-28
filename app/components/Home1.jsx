@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <>
       <div className="main-section" id="home" >
-        <div className="w-1/2 mx-20">
+        <div className="w-1/2 mx-32">
             <h1 className="mt-52 flex font-bold text-6xl ">{"Hi, I'm"}</h1>
             <br></br>
             <h1 className='font-bold text-6xl'>{"{Shadaab Hasan}"}</h1>
@@ -21,10 +21,10 @@ const Home = () => {
         <div className="w-1/2 flex justify-end">
               <div style={{ opacity: 1, transform: "none" }} className='mt-28 p-24'>
             <svg
-              viewBox="0 0 1280 906"
+              viewBox="0 0 1300 906"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="lg:w-[450px] w-full h-full"
+              className="w-full h-full"
             >
               <defs>
                 <linearGradient id="paint-linear" x1="1272.23" y1="479.474" x2="506.242" y2="-216.277" gradientUnits="userSpaceOnUse">
@@ -33,7 +33,7 @@ const Home = () => {
                   <stop offset="0.93102" stopColor="#1dd1a1" />
                 </linearGradient>
                 <clipPath id="clip0">
-                  <rect width="1273" height="906" fill="white" />
+                  <rect width="1290" height="906" fill="white" />
                 </clipPath>
               </defs>
               <g>
