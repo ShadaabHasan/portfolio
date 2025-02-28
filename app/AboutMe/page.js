@@ -57,7 +57,7 @@ const page = () => {
                         </div>
                         <div className="w-1/2 mx-20">
                         <div className="grid lg:grid-cols-1 gap-8 items-start">
-                            <div className="rounded-xl bg-card text-card-foreground shadow lg:col-span-2 p-6 hover:shadow-md transition-shadow py-11">
+                            <div className="rounded-xl bg-card text-card-foreground lg:col-span-2 p-6 hover:shadow-md transition-shadow py-11">
                                 <div className="flex items-center gap-3 mb-6">
                                     <div className="p-2 rounded-lg bg-primary/10 bg-slate-800">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-graduation-cap w-6 h-6 text-primary">
@@ -111,7 +111,7 @@ const page = () => {
                     <div className='main-section1 mt-24'>
                     <div className="w-1/2 mx-20">
                         <div className="grid lg:grid-cols-1 gap-8 items-start">
-                            <div className="rounded-xl bg-card mt-12 text-card-foreground shadow lg:col-span-2 p-6 hover:shadow-md transition-shadow py-11">
+                            <div className="rounded-xl bg-card mt-12 text-card-foreground lg:col-span-2 p-6 hover:shadow-md transition-shadow py-11">
                                 <div className="flex items-center gap-3 mb-6">
                                     <div className="p-2 rounded-lg bg-primary/10 bg-slate-800">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-graduation-cap w-6 h-6 text-primary">
@@ -144,6 +144,74 @@ const page = () => {
                             <img src="/projects/coding-stuff5.gif" alt="Shadaab Hasan GIF" className="w-auto h-80 rounded-3xl mt-5"/>
                         </div>
                     </div>
+
+                {/* section 4 */}
+                <div className='main-section1 mt-24'>
+                <div className='flex w-1/2 justify-center'>
+                            <img src="/projects/coding-stuff6.gif" alt="Shadaab Hasan GIF" className="w-auto h-80 rounded-3xl mt-10"/>
+                        </div>
+                    <div className="w-1/2 mx-20">
+                        <div className="grid lg:grid-cols-1 gap-8 items-start">
+                            <div className="rounded-xl bg-card mt-4 text-card-foreground lg:col-span-2 p-6 hover:shadow-md transition-shadow py-11">
+                                <div className="flex items-center gap-3 mb-6">
+                                    <div className="p-2 rounded-lg bg-primary/10 bg-slate-800">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-graduation-cap w-6 h-6 text-primary">
+                                        <g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M9 12L11 14L15 10M12 3L13.9101 4.87147L16.5 4.20577L17.2184 6.78155L19.7942 7.5L19.1285 10.0899L21 12L19.1285 13.9101L19.7942 16.5L17.2184 17.2184L16.5 19.7942L13.9101 19.1285L12 21L10.0899 19.1285L7.5 19.7942L6.78155 17.2184L4.20577 16.5L4.87147 13.9101L3 12L4.87147 10.0899L4.20577 7.5L6.78155 6.78155L7.5 4.20577L10.0899 4.87147L12 3Z" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path> </g>
+                                        </svg>
+                                    </div>
+                                    <h3 className="inline-flex items-center text-2xl font-semibold ">Certifications</h3>
+                                </div>
+                                <div>
+                                    <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-5">
+                                    <div>
+                                        <a href='https://www.coursera.org/account/accomplishments/certificate/C6TSEDWSJ24X'> 
+                                    <h3 className="font-semibold text-lg">Applied Machine Learning in Python</h3></a>
+                                    <p className="text-muted-foreground text-sm text-gray-400">University of Michigan</p>
+                                    </div>
+                                    <div className="text-right">
+                                    <p className="text-sm text-muted-foreground">Nov 14, 2022</p>
+                                    {/* <p className="text-sm font-medium text-primary">CGPA: 7.77</p> */}
+                                    </div>
+                                    
+                                    </div>
+
+                                    <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-5">
+                                    <div>
+                                        <a href='https://www.credly.com/badges/1ff729b5-7ab3-4936-a8ed-18c362e89538/linked_in_profile'> 
+                                    <h3 className="font-semibold text-lg">AWS Academy Cloud Foundations</h3></a>
+                                    <p className="text-muted-foreground text-sm text-gray-400">Amazon Web Services (AWS)</p>
+                                    </div>
+                                    <div className="text-right">
+                                    <p className="text-sm text-muted-foreground">Apr 4, 2024</p>
+                                    {/* <p className="text-sm font-medium text-primary">CGPA: 7.77</p> */}
+                                    </div>
+                                    
+                                    </div>
+
+                                    <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-5">
+                                    <div>
+                                        <a href='https://www.linkedin.com/in/shadaab-hasan-4a9b92271/details/certifications/1725463226053/single-media-viewer/?profileId=ACoAAEKPfUEBMawgeASsNZZZLZBbvvHHuZlIud0'> 
+                                    <h3 className="font-semibold text-lg">
+                                    AI&ML Workshop</h3></a>
+                                    <p className="text-muted-foreground text-sm text-gray-400">Techobytes Technologies</p>
+                                    </div>
+                                    <div className="text-right">
+                                    <p className="text-sm text-muted-foreground">Mar 10, 2024</p>
+                                    {/* <p className="text-sm font-medium text-primary">CGPA: 7.77</p> */}
+                                    </div>
+                                    
+                                    </div>
+
+                                </div>
+                                
+                            </div>
+                            
+                            
+                        </div>
+                        </div>
+                        
+                    </div>
+
                 </div>
             </div>
         </div>
