@@ -48,7 +48,7 @@ const page = () => {
     <>
     <Navbar />
     
-    <div className='min-h-screen bg-gradient-to-br from-slate-900 to-slate-700 text-white'>
+    <div className='min-h-screen bg-gradient-to-br from-slate-900 to-fuchsia-900 text-white'>
       <div className='text-8xl padding-top-contact'>
         <p>{"{Get in touch}"}</p>
       </div>

@@ -21,14 +21,14 @@ const Home = () => {
         <div className="w-1/2 flex justify-end">
               <div style={{ opacity: 1, transform: "none" }} className='mt-28 p-24'>
             <svg
-              viewBox="0 0 1273 906"
+              viewBox="0 0 1280 906"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
               className="lg:w-[450px] w-full h-full"
             >
               <defs>
                 <linearGradient id="paint-linear" x1="1272.23" y1="479.474" x2="506.242" y2="-216.277" gradientUnits="userSpaceOnUse">
-                  <stop stopColor="#ff00ff " />
+                  <stop stopColor="#FFFFFF " />
                   <stop offset="0.619553" stopColor="#54a0ff" />
                   <stop offset="0.93102" stopColor="#1dd1a1" />
                 </linearGradient>
