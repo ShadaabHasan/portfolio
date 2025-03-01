@@ -1,5 +1,6 @@
 'use client'
 
+
 import Navbar from "./components/Navbar";
 import Home1 from "./components/Home1";
 import Aboutme1 from "./components/Aboutme1";

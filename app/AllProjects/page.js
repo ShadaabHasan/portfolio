@@ -55,7 +55,7 @@ const AllProject = () => {
                             </div></div>
                             <div className="flex gap-4 pt-2">
                                 <a target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors border border-input h-9 px-4 py-2" href="https://github.com/ShadaabHasan/portfolio">GitHub</a>
-                                <a target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors h-9 px-4 py-2" href="">Live Demo</a>
+                                <a target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors h-9 px-4 py-2" href="https://shadaabhasan.vercel.app/">Live Demo</a>
                             </div>
                         </div>
                     </div>
