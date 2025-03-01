@@ -112,6 +112,22 @@
     
 }
 
+.btn-secondary-resume {
+    background-color: #6c757d;
+    color: #ffffff;
+    /* margin-left: 7px; */
+}
+
+.btn-secondary-resume-contact {
+    background-color: #6c757d;
+    color: #ffffff;
+}
+
+.btn-secondary-resume:hover {
+    background-color: #37393b;
+    
+}
+
 .padding-bottom-background{
     padding-bottom: 6px;
 }
@@ -146,7 +162,7 @@
 }
 
 .purple-footer{
-    background-color: #601a69;
+    background-color: #390140;
 }
 
 .black-footer{

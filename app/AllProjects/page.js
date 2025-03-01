@@ -158,8 +158,8 @@ const AllProject = () => {
         </div>
     </div>
     </div>
-    <div className='red-footer text-white'>
-    <Footer />
+    <div className='red-footer text-white mt-16'>
+        <Footer />
     </div>
     </div>
     </>

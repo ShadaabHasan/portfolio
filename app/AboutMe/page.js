@@ -4,6 +4,7 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import { useEffect, useState } from "react";
 import Footer from '../components/Footer';
+import DownloadResume from './DownloadResume';
 
 
 const page = () => {
@@ -42,7 +43,8 @@ const page = () => {
                                     I love building AI-driven applications, exploring new technologies, and solving real-world problems
                                     through data and machine learning.
                                 </p>
-                            </div>                            
+                            </div>
+                            <DownloadResume />                            
                         </div>
                         <div className='flex w-1/2 justify-center mt-28'>
                             <img src="/projects/coding-stuff.gif" alt="Shadaab Hasan GIF" className="w-auto h-80 rounded-3xl"/>
@@ -215,7 +217,10 @@ const page = () => {
                 </div>
             </div>
         </div>
+        <div className='mt-16'>
         <Footer />
+
+        </div>
       </div>
       
     </>
