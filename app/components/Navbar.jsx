@@ -18,9 +18,9 @@ const navbar = () => {
               <div className="hidden md:flex items-center space-x-4">
                 <a className="" href="/#home">{"Home"}</a>
                 <span className="">|</span>
-                <a className="" href="/#Aboutme1">{"About"}</a>
+                <a className="" href="/AboutMe">{"About"}</a>
                 <span className="">|</span>
-                <a className="" href="/#featuredproj">{"Projects"}</a>
+                <a className="" href="/AllProjects">{"Projects"}</a>
                 <span className="">|</span>
                 <a className='' href='/Contact'>{"Contact"}</a>
               </div>
