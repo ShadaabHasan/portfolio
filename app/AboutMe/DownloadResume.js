@@ -6,7 +6,7 @@ const DownloadResume = () => {
   return (
     <>
      <a href="/Shadaab_resume.pdf" target="_blank" rel="noopener noreferrer">
-      <button className='btn btn-secondary-resume'>Download Resume</button>
+      <button className='btn btn-secondary-resume'>Resume</button>
     </a>
    </>
 
