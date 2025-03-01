@@ -107,6 +107,11 @@
     color: #ffffff;
 }
 
+.btn-secondary-contact:hover {
+    background-color: #931095;
+    
+}
+
 .btn-secondary:hover {
     background-color: #37393b;
     
