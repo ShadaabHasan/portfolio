@@ -33,8 +33,8 @@ const page = () => {
                         <h2 className="text-3xl md:text-4xl font-bold">About Me</h2>
                     </div>
                     <div className='main-section1'>
-                        <div className="w-1/2 mx-28">
-                            <div className="mt-36 max-w-4xl text-4xl font-bold text-white leading-relaxed">
+                        <div className="w-1/2 mt-32 mx-28 p-5 rounded-xl hover:shadow-md">
+                            <div className="max-w-4xl text-4xl font-bold text-white leading-relaxed">
                                 <p>Hey! I'm Shadaab Hasan.</p>
                             </div>
                             <div className='text-gray-400 text-xl mt-5 w-11/12'>
