@@ -5,7 +5,7 @@ import React from 'react'
 const Home = () => {
   return (
     <>
-      <div className="main-section flex flex-wrap" id="home" >
+      <div className="main-section" id="home" >
         <div className="w-1/2 mx-32">
             <h1 className="mt-52 flex font-bold text-6xl ">{"Hi, I'm"}</h1>
             <br></br>
