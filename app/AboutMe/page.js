@@ -33,11 +33,11 @@ const page = () => {
                         <h2 className="text-3xl md:text-4xl font-bold">About Me</h2>
                     </div>
                     <div className='main-section1'>
-                        <div className="w-1/2 mt-32 mx-28 p-5 rounded-xl hover:shadow-md">
-                            <div className="max-w-4xl text-4xl font-bold text-white leading-relaxed">
+                        <div className="w-1/2 mt-32 mx-5 md:mx-28 p-5 rounded-xl hover:shadow-md">
+                            <div className="max-w-4xl text-2xl md:text-4xl font-bold text-white leading-relaxed">
                                 <p>Hey! I'm Shadaab Hasan.</p>
                             </div>
-                            <div className='text-gray-400 text-xl mt-5 w-11/12'>
+                            <div className='text-gray-400 text-sm md:text-xl mt-5 w-11/12'>
                                 <p>
                                     An aspiring Data Scientist currently pursuing BE Computer Engineering.
                                     I love building AI-driven applications, exploring new technologies, and solving real-world problems
@@ -47,7 +47,7 @@ const page = () => {
                             <DownloadResume />                            
                         </div>
                         <div className='flex w-1/2 justify-center mt-28'>
-                            <img src="/projects/coding-stuff.gif" alt="Shadaab Hasan GIF" className="w-auto h-80 rounded-3xl"/>
+                            <img src="/projects/coding-stuff.gif" alt="Shadaab Hasan GIF" className="w-36 md:w-auto h-40 md:h-80 mt-36 md:mt-0 rounded-3xl"/>
                         </div>
                     </div>
 
@@ -55,9 +55,9 @@ const page = () => {
                     
                     <div className='main-section1 mt-32'>
                     <div className='flex w-1/2 justify-center'>
-                            <img src="/projects/coding-stuff1.gif" alt="Shadaab Hasan GIF" className="w-auto h-80 rounded-3xl mt-5"/>
+                            <img src="/projects/coding-stuff1.gif" alt="Shadaab Hasan GIF" className="w-36 md:w-auto h-40 md:h-80 mt-36 md:mt-5 rounded-3xl"/>
                         </div>
-                        <div className="w-1/2 mx-20">
+                        <div className="w-1/2 mx-5 md:mx-28">
                         <div className="grid lg:grid-cols-1 gap-8 items-start">
                             <div className="rounded-xl bg-card text-card-foreground lg:col-span-2 p-6 hover:shadow-md transition-shadow py-11">
                                 <div className="flex items-center gap-3 mb-6">
@@ -111,7 +111,7 @@ const page = () => {
 
                     {/* section 3 */}
                     <div className='main-section1 mt-24'>
-                    <div className="w-1/2 mx-20">
+                    <div className="w-1/2 mx-0 md:mx-20">
                         <div className="grid lg:grid-cols-1 gap-8 items-start">
                             <div className="rounded-xl bg-card mt-12 text-card-foreground lg:col-span-2 p-6 hover:shadow-md transition-shadow py-11">
                                 <div className="flex items-center gap-3 mb-6">
@@ -142,17 +142,17 @@ const page = () => {
                             
                         </div>
                         </div>
-                        <div className='flex w-1/2 justify-center'>
-                            <img src="/projects/coding-stuff5.gif" alt="Shadaab Hasan GIF" className="w-auto h-80 rounded-3xl mt-5"/>
+                        <div className='flex w-1/2 justify-center ml-8 md:ml-0'>
+                            <img src="/projects/coding-stuff5.gif" alt="Shadaab Hasan GIF" className="w-36 md:w-auto h-40 md:h-80 mt-36 md:mt-5 rounded-3xl"/>
                         </div>
                     </div>
 
                 {/* section 4 */}
                 <div className='main-section1 mt-24'>
                 <div className='flex w-1/2 justify-center'>
-                            <img src="/projects/coding-stuff6.gif" alt="Shadaab Hasan GIF" className="w-auto h-80 rounded-3xl mt-10"/>
+                            <img src="/projects/coding-stuff6.gif" alt="Shadaab Hasan GIF" className="w-auto md:w-auto h-60 md:h-80 mt-36 md:mt-10 rounded-3xl"/>
                         </div>
-                    <div className="w-1/2 mx-20">
+                    <div className="w-1/2 mx-2 mr-14 md:mx-20">
                         <div className="grid lg:grid-cols-1 gap-8 items-start">
                             <div className="rounded-xl bg-card mt-4 text-card-foreground lg:col-span-2 p-6 hover:shadow-md transition-shadow py-11">
                                 <div className="flex items-center gap-3 mb-6">
