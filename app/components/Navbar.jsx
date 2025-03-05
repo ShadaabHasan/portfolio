@@ -1,6 +1,7 @@
 import React from 'react'
 import { useRouter } from 'next/navigation';
 import { useState } from "react";
+import {motion} from "framer-motion"
 
 
 const navbar = () => {
@@ -28,11 +29,10 @@ const navbar = () => {
                 <a className='' href='/Contact'>{"Contact"}</a>
               </div>
                {/* Mobile Menu Button */}
-        <button 
-          className="md:hidden text-white text-2xl focus:outline-none mr-4" 
-          onClick={() => setIsOpen(!isOpen)}
-        >
+        <button className="md:hidden text-white text-2xl focus:outline-none mr-4" onClick={() => setIsOpen(!isOpen)}>
+          <motion.div initial={false} animate={{ rotate: isOpen ? 90 : 0 }} transition={{ duration: 0.2, ease: "easeInOut" }}>
           {isOpen ? "✖" : "☰"}
+          </motion.div>
         </button>
           </div>
          
@@ -42,12 +42,18 @@ const navbar = () => {
 
          {/* Mobile Menu */}
         {isOpen && (
-        <div className="md:hidden flex flex-col items-center space-y-4 py-4">
+          <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }}
+          transition={{ duration: 0.3, ease: "easeInOut" }} className="md:hidden flex flex-col items-center space-y-4 py-4">
+        <div className="md:hidden flex flex-col items-center space-y-4 py-4 px-5 border-b-transparent">
           <a href="/#home" className="text-white hover:text-gray-300" onClick={() => setIsOpen(false)}>Home</a>
+          {/* <span className="">|</span> */}
           <a href="/AboutMe" className="text-white hover:text-gray-300" onClick={() => setIsOpen(false)}>About</a>
+          {/* <span className="">|</span> */}
           <a href="/AllProjects" className="text-white hover:text-gray-300" onClick={() => setIsOpen(false)}>Projects</a>
+          {/* <span className="">|</span> */}
           <a href="/Contact" className="text-white hover:text-gray-300" onClick={() => setIsOpen(false)}>Contact</a>
         </div>
+        </motion.div>
       )}
         
       </nav>
