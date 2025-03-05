@@ -33,7 +33,7 @@ const page = () => {
                         <h2 className="text-3xl md:text-4xl font-bold">About Me</h2>
                     </div>
                     <div className='main-section1'>
-                        <div className="w-1/2 mt-32 mx-5 md:mx-28 p-5 rounded-xl hover:shadow-md">
+                        <div className="w-1/2 mt-16 md:mt-32 mx-5 md:mx-28 p-5 rounded-xl hover:shadow-md">
                             <div className="max-w-4xl text-2xl md:text-4xl font-bold text-white leading-relaxed">
                                 <p>Hey! I'm Shadaab Hasan.</p>
                             </div>
@@ -46,7 +46,7 @@ const page = () => {
                             </div>
                             <DownloadResume />                            
                         </div>
-                        <div className='flex w-1/2 justify-center mt-28'>
+                        <div className='flex w-1/2 justify-center mt-12 md:mt-28'>
                             <img src="/projects/coding-stuff.gif" alt="Shadaab Hasan GIF" className="w-36 md:w-auto h-40 md:h-80 mt-36 md:mt-0 rounded-3xl"/>
                         </div>
                     </div>
