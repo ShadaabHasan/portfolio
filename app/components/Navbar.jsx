@@ -15,9 +15,9 @@ const navbar = () => {
   return (
     <>
       <nav className="fixed top-0 w-full max-w-full backdrop-blur z-50 border-b border-border text-white flex-wrap">
-        <div className="container mx-auto px-14">
+        <div className="container mx-auto px-2 md:px-14">
           <div className="flex flex-wrap h-16 items-center justify-between">
-            <a className='text-xl font-bold' href='/' onClick={goToHome}>Shadaab Hasan | Portfolio </a>
+            <a className='text-lg font-bold sm:text-lg md:text-xl lg:text-xl' href='/' onClick={goToHome}>Shadaab Hasan | Portfolio </a>
               <div className="hidden md:flex items-center space-x-4">
                 <a className="" href="/#home">{"Home"}</a>
                 <span className="">|</span>
@@ -27,14 +27,15 @@ const navbar = () => {
                 <span className="">|</span>
                 <a className='' href='/Contact'>{"Contact"}</a>
               </div>
-          </div>
-          {/* Mobile Menu Button */}
+               {/* Mobile Menu Button */}
         <button 
-          className="md:hidden text-white text-2xl focus:outline-none" 
+          className="md:hidden text-white text-2xl focus:outline-none mr-4" 
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? "✖" : "☰"}
         </button>
+          </div>
+         
         </div>
 
         

@@ -6,19 +6,19 @@ const Home = () => {
   return (
     <>
       <div className="main-section" id="home" >
-        <div className="w-1/2 mx-32">
-            <h1 className="mt-52 flex font-bold text-6xl ">{"Hi, I'm"}</h1>
+        <div className="w-full md:w-1/2 mx-5 md:mx-32">
+            <h1 className="mt-52 flex font-bold text-4xl sm:text-4xl md:text-5xl lg:text-6xl ">{"Hi, I'm"}</h1>
             <br></br>
-            <h1 className='font-bold text-6xl'>{"{Shadaab Hasan}"}</h1>
-            <p className="mt-5 text-lg md:text-xl lg:text-xl text-muted-foreground max-w-3xl">A passionate and aspiring Data Scientist</p>
-            <p className='mt-4 grey'>Check out my work or connect with me:</p>
+            <h1 className='font-bold text-4xl sm:text-4xl md:text-5xl lg:text-6xl'>{"{Shadaab Hasan}"}</h1>
+            <p className="mt-5 text-sm sm:text-sm md:text-lg lg:text-xl text-muted-foreground max-w-3xl">A passionate and aspiring Data Scientist</p>
+            <p className='mt-4 grey text-xs sm:text-sm md:text-base lg:text-base'>Check out my work or connect with me:</p>
             <div>
-                <a href="/#featuredproj" className="btn btn-primary mt-2">Projects</a>
-                <a href="/Contact" className="btn btn-secondary">Contact Me</a>
+                <a href="/#featuredproj" className="btn btn-primary md:mt-2">Projects</a>
+                <a href="/Contact" className="btn btn-secondary md:ml-2">Contact Me</a>
             </div>
         </div>
             
-        <div className="w-1/2 flex justify-end">
+        <div className="w-1/2 hidden md:flex justify-end">
               <div style={{ opacity: 1, transform: "none" }} className='mt-28 p-24'>
             <svg
               viewBox="0 0 1300 906"
