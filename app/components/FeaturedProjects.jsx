@@ -11,12 +11,16 @@ const FeaturedProjects = () => {
                             <p className="mt-4 text-lg text-muted-foreground grey">A showcase of my recent projects, demonstrating my skills in AI, machine learning, and more.</p>
                         </div>
                         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-6 p-5 mx-10">
+
+                            {/* project 1 */}
+
                             <div className="h-full">
                                 <div className="bg-card rounded-lg shadow-lg overflow-hidden h-full flex flex-col">
                                     <div className="relative">
                                         <img alt="Portfolio Website" loading="lazy" decoding="async" data-nimg="fill" className="object-cover transition-transform hover:scale-105 duration-300" src='/projects/portfolio.jpg'/>
                                         
                                     </div>
+
                                     <div className="p-6 space-y-4">
                                         <div>
                                             <h3 className="text-xl font-semibold mb-2">Portfolio Website</h3>
@@ -36,6 +40,8 @@ const FeaturedProjects = () => {
                                     </div>
                                 </div>
                             </div>
+
+                            {/* project 2 */}
                             <div className="h-full">
                                 <div className="bg-card rounded-lg shadow-lg overflow-hidden h-full flex flex-col">
                                     <div className="relative">
@@ -60,6 +66,8 @@ const FeaturedProjects = () => {
                                     </div>
                                 </div>
                             </div>
+
+                            {/* project 3 */}
                             <div className="h-full" >
                                 <div className="bg-card rounded-lg shadow-lg overflow-hidden h-full flex flex-col">
                                     <div className="relative">

@@ -34,6 +34,8 @@ const AllProject = () => {
                 <p className="mt-4 text-lg text-muted-foreground grey">A showcase of my recent projects, demonstrating my skills in AI, machine learning, and more.</p>
             </div>
             <div className="grid md:grid-cols-3 lg:grid-cols-3 gap-20 p-5 mt-6 mx-20">
+
+                {/* project 1 */}
                 <div className="h-full">
                     <div className="bg-card rounded-lg shadow-lg overflow-hidden h-full flex flex-col">
                         <div className="relative">
@@ -60,6 +62,8 @@ const AllProject = () => {
                         </div>
                     </div>
                 </div>
+
+                {/* project 2 */}
                 <div className="h-full">
                     <div className="bg-card rounded-lg shadow-lg overflow-hidden h-full flex flex-col">
                         <div className="relative">
@@ -85,6 +89,8 @@ const AllProject = () => {
                         </div>
                     </div>
                 </div>
+
+                {/* project 3 */}
                 <div className="h-full" >
                     <div className="bg-card rounded-lg shadow-lg overflow-hidden h-full flex flex-col">
                         <div className="relative">
@@ -111,9 +117,12 @@ const AllProject = () => {
                         </div>
                     </div>
                 </div>
+
+                {/* project 4 */}
+                <div className="h-full" >
                 <div className="bg-card rounded-lg shadow-lg overflow-hidden h-full flex flex-col">
                     <div className="relative">
-                        <img alt="Portfolio Website" loading="lazy" decoding="async" data-nimg="fill" className="object-cover transition-transform hover:scale-105 duration-300" src='/projects/hotel-booking.jpg'/>
+                        <img alt="Hotel Booking Analysis" loading="lazy" decoding="async" data-nimg="fill" className="object-cover transition-transform hover:scale-105 duration-300" src='/projects/hotel-booking.jpg'/>
                     </div>
                     <div className="p-6 space-y-4">
                         <div>
@@ -133,9 +142,40 @@ const AllProject = () => {
                         </div>
                     </div>
                 </div>
+                </div>
+
+                {/* project 5 */}
+                <div className='h-full'>
                 <div className="bg-card rounded-lg shadow-lg overflow-hidden h-full flex flex-col">
                     <div className="relative">
-                        <img alt="Portfolio Website" loading="lazy" decoding="async" data-nimg="fill" className="object-cover transition-transform hover:scale-105 duration-300" src='/projects/student-feedback_re.png'/>
+                        <img alt="Literature Review" loading="lazy" decoding="async" data-nimg="fill" className="object-cover transition-transform hover:scale-105 duration-300" src='/projects/literature-review.jpg'/>
+                    </div>
+                    <div className="p-6 space-y-4">
+                        <div>
+                            <h3 className="text-xl font-semibold mb-2">SummarAIze</h3>
+                            {/* <div className="inline-block rounded-full bg-primary/10 px-2 py-1 text-xs text-primary mb-2">Featured Project</div> */}
+                            <p className="text-muted-foreground">An NLP based review and summarization tool for research papers and more.</p>
+                        </div>
+                        <div className="flex flex-wrap gap-2">
+                            <span className="inline-flex items-center rounded-full font-medium bg-primary/10 text-primary hover:bg-primary/20 transition-colors border border-primary/20 text-xs px-2 py-1">Natural Language Processing</span>
+                            <span className="inline-flex items-center rounded-full font-medium bg-primary/10 text-primary hover:bg-primary/20 transition-colors border border-primary/20 text-xs px-2 py-1">Python</span>
+                            <div className="flex flex-wrap gap-2 w-full">
+                            <span className="inline-flex items-center rounded-full font-medium bg-primary/10 text-primary hover:bg-primary/20 transition-colors border border-primary/20 text-xs px-2 py-1">BART</span>
+                            <span className="inline-flex items-center rounded-full font-medium bg-primary/10 text-primary hover:bg-primary/20 transition-colors border border-primary/20 text-xs px-2 py-1">TensorFlow</span>
+                            </div>                        
+                        </div>
+                        <div className="flex gap-4 pt-2">
+                            <a target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors border border-input h-9 px-4 py-2" href="https://github.com/ShadaabHasan/portfolio">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                
+                {/* project 6 */}
+                <div className='h-full'>
+                <div className="bg-card rounded-lg shadow-lg overflow-hidden h-full flex flex-col">
+                    <div className="relative">
+                        <img alt="Student Feedback Analysis" loading="lazy" decoding="async" data-nimg="fill" className="object-cover transition-transform hover:scale-105 duration-300" src='/projects/student-feedback_re.png'/>
                     </div>
                     <div className="p-6 space-y-4">
                         <div>
@@ -153,6 +193,7 @@ const AllProject = () => {
                             <a target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors border border-input h-9 px-4 py-2" href="https://github.com/ShadaabHasan/portfolio">GitHub</a>
                         </div>
                     </div>
+                </div>
                 </div>
             </div>
         </div>
