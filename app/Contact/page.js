@@ -65,13 +65,13 @@ const page = () => {
     <div className={`transition-all duration-300 ${isBottom ? "m-5" : "m-0"}`}>
 
     <div className='min-h-screen bg-gradient-to-br from-slate-900 to-fuchsia-900 text-white rounded-3xl'>
-      <div className='text-8xl padding-top-contact'>
+      <div className='text-5xl md:text-8xl pt-28 pb-2 pl-10 md:pb-2 md:pl-40'>
         <p>{"{Get in touch}"}</p>
       </div>
-      <div className='text-2xl padding-left-contact text-gray-500'>
+      <div className='text-lg md:text-2xl text-gray-500 pl-10 mr-10 md:pl-44 md:mr-96'>
       Fill out the form below and I'll get back to you as soon as possible.
       </div>
-      <div className='padding-left-contact'>
+      <div className='pl-10 mr-10 md:pl-44 md:mr-96'>
         <form className="w-full max-w mt-9" onSubmit={handleSubmit}>
           <div className="mb-4">
             <label className="block text-gray-300"></label>
