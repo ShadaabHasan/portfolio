@@ -33,7 +33,7 @@ const AllProject = () => {
                 <h2 className="text-3xl md:text-4xl font-bold">All Projects</h2>
                 <p className="mt-4 text-lg text-muted-foreground grey">A showcase of my recent projects, demonstrating my skills in AI, machine learning, and more.</p>
             </div>
-            <div className="grid md:grid-cols-3 lg:grid-cols-3 gap-20 p-5 mt-6 mx-20">
+            <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-20 p-5 mt-6 mx-2 md:mx-20">
 
                 {/* project 1 */}
                 <div className="h-full">

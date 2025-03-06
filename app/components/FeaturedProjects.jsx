@@ -10,7 +10,7 @@ const FeaturedProjects = () => {
                             <h2 className="text-3xl md:text-4xl font-bold">{"{Featured Projects}"}</h2>
                             <p className="mt-4 text-lg text-muted-foreground grey">A showcase of my recent projects, demonstrating my skills in AI, machine learning, and more.</p>
                         </div>
-                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-6 p-5 mx-10">
+                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-6 p-5 mx-2 md:mx-10">
 
                             {/* project 1 */}
 
