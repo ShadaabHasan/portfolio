@@ -4,10 +4,9 @@ A personal portfolio website built with **Next.js** and deployed on **Vercel**, 
 
 ## 📌 Features
 
- - Responsive and modern UI\
- - About Me & Projects Showcase\
- - Contact Form with Firebase Firestore\
- - Resume Download & View in New Tab\
+ - Responsive and modern UI
+ - About Me & Projects Showcase
+ - Contact Form connected to Firebase Firestore 
  - Deployed on Vercel
 
 ---
