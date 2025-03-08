@@ -29,9 +29,4 @@ If you have any questions or issues, feel free to reach out!
 
 🔗 [View Portfolio](https://ShadaabHasan.vercel.app)
 
----
-
-## 📜 License
-
-This project is **open-source** and available under the [MIT License](LICENSE).
 
