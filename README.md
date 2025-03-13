@@ -4,10 +4,9 @@ A personal portfolio website built with **Next.js** and deployed on **Vercel**, 
 
 ## 📌 Features
 
- - Responsive and modern UI\
- - About Me & Projects Showcase\
- - Contact Form with Firebase Firestore\
- - Resume Download & View in New Tab\
+ - Responsive and modern UI
+ - About Me & Projects Showcase
+ - Contact Form connected to Firebase Firestore 
  - Deployed on Vercel
 
 ---
@@ -29,9 +28,4 @@ If you have any questions or issues, feel free to reach out!
 
 🔗 [View Portfolio](https://ShadaabHasan.vercel.app)
 
----
-
-## 📜 License
-
-This project is **open-source** and available under the [MIT License](LICENSE).
 
