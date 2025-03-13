@@ -122,7 +122,7 @@ const AllProject = () => {
                 <div className="h-full" >
                 <div className="bg-card rounded-lg shadow-lg overflow-hidden h-full flex flex-col">
                     <div className="relative">
-                        <img alt="Hotel Booking Analysis" loading="lazy" decoding="async" data-nimg="fill" className="object-cover transition-transform hover:scale-105 duration-300" src='/projects/hotel-booking.jpg'/>
+                        <img alt="Hotel Booking Analysis" loading="lazy" decoding="async" data-nimg="fill" className="object-cover transition-transform hover:scale-105 duration-300" src='/projects/hotel-booking-1.jpg'/>
                     </div>
                     <div className="p-6 space-y-4">
                         <div>
@@ -148,7 +148,7 @@ const AllProject = () => {
                 <div className='h-full'>
                 <div className="bg-card rounded-lg shadow-lg overflow-hidden h-full flex flex-col">
                     <div className="relative">
-                        <img alt="Literature Review" loading="lazy" decoding="async" data-nimg="fill" className="object-cover transition-transform hover:scale-105 duration-300" src='/projects/literature-review.jpg'/>
+                        <img alt="Literature Review" loading="lazy" decoding="async" data-nimg="fill" className="object-cover transition-transform hover:scale-105 duration-300" src='/projects/literature-review-1.jpg'/>
                     </div>
                     <div className="p-6 space-y-4">
                         <div>
@@ -170,8 +170,33 @@ const AllProject = () => {
                     </div>
                 </div>
                 </div>
-                
                 {/* project 6 */}
+                <div className='h-full'>
+                <div className="bg-card rounded-lg shadow-lg overflow-hidden h-full flex flex-col">
+                    <div className="relative">
+                        <img alt="F1 Data z" loading="lazy" decoding="async" data-nimg="fill" className="object-cover transition-transform hover:scale-105 duration-300" src='/projects/f1-illustrate.png'/>
+                    </div>
+                    <div className="p-6 space-y-4">
+                        <div>
+                            <h3 className="text-xl font-semibold mb-2">F1 Data Visualization</h3>
+                            {/* <div className="inline-block rounded-full bg-primary/10 px-2 py-1 text-xs text-primary mb-2">Featured Project</div> */}
+                            <p className="text-muted-foreground">Formula 1 race data analysis of driver performance, lap time trends and more.</p>
+                        </div>
+                        <div className="flex flex-wrap gap-2">
+                            <span className="inline-flex items-center rounded-full font-medium bg-primary/10 text-primary hover:bg-primary/20 transition-colors border border-primary/20 text-xs px-2 py-1">R</span>
+                            <span className="inline-flex items-center rounded-full font-medium bg-primary/10 text-primary hover:bg-primary/20 transition-colors border border-primary/20 text-xs px-2 py-1">Exploratory Data Analysis</span>
+                            <div className="flex flex-wrap gap-2 w-full">
+                            <span className="inline-flex items-center rounded-full font-medium bg-primary/10 text-primary hover:bg-primary/20 transition-colors border border-primary/20 text-xs px-2 py-1">Data Visualization</span>
+                            <span className="inline-flex items-center rounded-full font-medium bg-primary/10 text-primary hover:bg-primary/20 transition-colors border border-primary/20 text-xs px-2 py-1">SQL</span>
+                        </div></div>
+                        <div className="flex gap-4 pt-2">
+                            <a target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors border border-input h-9 px-4 py-2" href="https://github.com/ShadaabHasan/F1-Data-z">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                {/* project 7 */}
                 <div className='h-full'>
                 <div className="bg-card rounded-lg shadow-lg overflow-hidden h-full flex flex-col">
                     <div className="relative">
