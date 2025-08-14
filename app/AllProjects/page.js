@@ -206,13 +206,13 @@ const AllProject = () => {
                         <div>
                             <h3 className="text-xl font-semibold mb-2">Student Feedback Analysis</h3>
                             {/* <div className="inline-block rounded-full bg-primary/10 px-2 py-1 text-xs text-primary mb-2">Featured Project</div> */}
-                            <p className="text-muted-foreground">Under Development.</p>
+                            <p className="text-muted-foreground">An NLP-based student feedback analysis, classification and summarization tool..</p>
                         </div>
                         <div className="flex flex-wrap gap-2">
-                            {/* <span className="inline-flex items-center rounded-full font-medium bg-primary/10 text-primary hover:bg-primary/20 transition-colors border border-primary/20 text-xs px-2 py-1">Next.js</span>
-                            <span className="inline-flex items-center rounded-full font-medium bg-primary/10 text-primary hover:bg-primary/20 transition-colors border border-primary/20 text-xs px-2 py-1">React</span>
-                            <span className="inline-flex items-center rounded-full font-medium bg-primary/10 text-primary hover:bg-primary/20 transition-colors border border-primary/20 text-xs px-2 py-1">TypeScript</span>
-                            <span className="inline-flex items-center rounded-full font-medium bg-primary/10 text-primary hover:bg-primary/20 transition-colors border border-primary/20 text-xs px-2 py-1">Tailwind CSS</span> */}
+                            <span className="inline-flex items-center rounded-full font-medium bg-primary/10 text-primary hover:bg-primary/20 transition-colors border border-primary/20 text-xs px-2 py-1">Natural Language Processing</span>
+                            <span className="inline-flex items-center rounded-full font-medium bg-primary/10 text-primary hover:bg-primary/20 transition-colors border border-primary/20 text-xs px-2 py-1">Python</span>
+                            <span className="inline-flex items-center rounded-full font-medium bg-primary/10 text-primary hover:bg-primary/20 transition-colors border border-primary/20 text-xs px-2 py-1">Machine Learning</span>
+                            <span className="inline-flex items-center rounded-full font-medium bg-primary/10 text-primary hover:bg-primary/20 transition-colors border border-primary/20 text-xs px-2 py-1">Exploratory Data Analysis</span>
                         </div>
                         <div className="flex gap-4 pt-2">
                             <a target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors border border-input h-9 px-4 py-2" href="https://github.com/ShadaabHasan/portfolio">GitHub</a>
