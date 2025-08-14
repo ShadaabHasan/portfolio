@@ -200,7 +200,7 @@ const AllProject = () => {
                 <div className='h-full'>
                 <div className="bg-card rounded-lg shadow-lg overflow-hidden h-full flex flex-col">
                     <div className="relative">
-                        <img alt="Student Feedback Analysis" loading="lazy" decoding="async" data-nimg="fill" className="object-cover transition-transform hover:scale-105 duration-300" src='/projects/student-feedback_re.png'/>
+                        <img alt="Student Feedback Analysis" loading="lazy" decoding="async" data-nimg="fill" className="object-cover transition-transform hover:scale-105 duration-300" src='/projects/student-feedback-system.png'/>
                     </div>
                     <div className="p-6 space-y-4">
                         <div>
@@ -215,7 +215,7 @@ const AllProject = () => {
                             <span className="inline-flex items-center rounded-full font-medium bg-primary/10 text-primary hover:bg-primary/20 transition-colors border border-primary/20 text-xs px-2 py-1">Exploratory Data Analysis</span>
                         </div>
                         <div className="flex gap-4 pt-2">
-                            <a target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors border border-input h-9 px-4 py-2" href="https://github.com/ShadaabHasan/portfolio">GitHub</a>
+                            <a target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors border border-input h-9 px-4 py-2" href="https://github.com/ShadaabHasan/student-review-system">GitHub</a>
                         </div>
                     </div>
                 </div>
