@@ -22,7 +22,7 @@ A personal portfolio website built with **Next.js** and deployed on **Vercel**, 
 
 If you have any questions or issues, feel free to reach out!
 
-📧 Email: shadaabhasan7@gmail.com 🔗 [LinkedIn](www.linkedin.com/in/shadaab-hasan-4a9b92271)
+📧 [Email](mailto:shadaabhasan7@gmail.com) 🔗 [LinkedIn](www.linkedin.com/in/shadaab-hasan-4a9b92271)
 
 ## 🌐 Live Demo
 
