@@ -134,7 +134,7 @@ const AllProject = () => {
                             <span className="inline-flex items-center rounded-full font-medium bg-primary/10 text-primary hover:bg-primary/20 transition-colors border border-primary/20 text-xs px-2 py-1">R</span>
                             <span className="inline-flex items-center rounded-full font-medium bg-primary/10 text-primary hover:bg-primary/20 transition-colors border border-primary/20 text-xs px-2 py-1">Exploratory Data Analysis</span>
                             <div className="flex flex-wrap gap-2 w-full">
-                            <span className="inline-flex items-center rounded-full font-medium bg-primary/10 text-primary hover:bg-primary/20 transition-colors border border-primary/20 text-xs px-2 py-1">Data Visualization</span>
+                            <span className="inline-flex items-center rounded-full font-medium bg-primary/10 text-primary hover:bg-primary/20 transition-colors border border-primary/20 text-xs px-2 py-1">Predictive Modelling</span>
                             <span className="inline-flex items-center rounded-full font-medium bg-primary/10 text-primary hover:bg-primary/20 transition-colors border border-primary/20 text-xs px-2 py-1">Machine Learning</span>
                         </div></div>
                         <div className="flex gap-4 pt-2">

@@ -10,11 +10,11 @@ const Home = () => {
             <h1 className="mt-52 flex font-bold text-4xl sm:text-4xl md:text-5xl lg:text-6xl ">{"Hi, I'm"}</h1>
             <br></br>
             <h1 className='font-bold text-4xl sm:text-4xl md:text-5xl lg:text-6xl'>{"{Shadaab Hasan}"}</h1>
-            <p className="mt-5 text-sm sm:text-sm md:text-lg lg:text-xl text-muted-foreground max-w-3xl">A passionate and aspiring Data Scientist</p>
-            <p className='mt-4 grey text-xs sm:text-sm md:text-base lg:text-base'>Check out my work or connect with me:</p>
+            <p className="mt-5 text-sm sm:text-sm md:text-lg lg:text-xl text-muted-foreground max-w-3xl px-2 py-2">Data Scientist & AI/ML Developer.</p>
+            {/* <p className='mt-4 grey text-xs sm:text-sm md:text-base lg:text-base'>Check out my work or connect with me:</p> */}
             <div>
-                <a href="/#featuredproj" className="btn btn-primary md:mt-2">Projects</a>
-                <a href="/Contact" className="btn btn-secondary md:ml-2">Contact Me</a>
+                <a href="/#featuredproj" className="btn btn-primary md:mt-2">View My Work</a>
+                <a href="/Contact" className="btn btn-secondary md:ml-2">Get in Touch</a>
             </div>
         </div>
             

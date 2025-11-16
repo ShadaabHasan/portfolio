@@ -18,7 +18,7 @@ const Aboutme1 = () => {
                             <h2 className="text-4xl md:text-5xl font-bold mb-8">
                                 Transforming complex data into useful insights 
                             </h2>
-                            <p className="text-lg text-muted-foreground max-w-2xl mx-auto grey">Computer Engineering student and aspiring Data Scientist building innovative solutions powered by AI/ML and data-driven decision-making.</p>
+                            <p className="text-lg text-muted-foreground max-w-2xl mx-auto grey">Masters student at the University of Galway, building innovative solutions powered by AI/ML and data-driven decision-making.</p>
                         </div>
                         <div className="grid lg:grid-cols-5 gap-8 items-start mb-12 m-10">
                             <div className="rounded-xl border bg-card text-card-foreground shadow lg:col-span-2 p-6 hover:shadow-md transition-shadow py-11">
@@ -30,9 +30,9 @@ const Aboutme1 = () => {
                                             <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
                                         </svg>
                                     </div>
-                                    <h3 className="inline-flex items-center text-2xl font-semibold ">Background</h3>
+                                    <h3 className="inline-flex items-center text-2xl font-semibold">Background</h3>
                                 </div>
-                                <p className="inline-flex items-center text-muted-foreground leading-relaxed text-l">As a final-year Computer Engineering student at Rizvi College of Engineering, I am passionate about applying AI and data science to solve real-world problems. My expertise includes creating predictive models, exploring NLP for automating literature reviews, and developing scalable solutions in data science.</p>
+                                <p className="inline-flex items-center text-muted-foreground leading-relaxed text-l py-7">Currently pursuing an M.Sc. in Data Analytics at the University of Galway, I am passionate about applying AI and data science to solve real-world problems. My expertise includes building predictive models, leveraging NLP for text analysis, and engineering scalable data science solutions.</p>
                             </div>
                             <div className="lg:col-span-3 grid sm:grid-cols-2 gap-3">
                                 <div className="rounded-xl border bg-card text-card-foreground shadow p-6 hover:shadow-md transition-shadow">
@@ -56,6 +56,7 @@ const Aboutme1 = () => {
                                         <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-purple-500/10 text-purple-500 hover:scale-105 transition-transform">NLP</div>
                                         <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-purple-500/10 text-purple-500 hover:scale-105 transition-transform">Data Science</div>
                                         <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-purple-500/10 text-purple-500 hover:scale-105 transition-transform">Machine Learning</div>
+                                        <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-purple-500/10 text-purple-500 hover:scale-105 transition-transform">Predictive Modelling</div>
                                     </div>
                                 </div>
                                 <div className="rounded-xl border bg-card text-card-foreground shadow p-6 hover:shadow-md transition-shadow">
@@ -85,7 +86,9 @@ const Aboutme1 = () => {
                                     </div>
                                     <div className="flex flex-wrap gap-2">
                                         <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-orange-500/10 text-orange-500 hover:scale-105 transition-transform">Python</div>
-                                        <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-orange-500/10 text-orange-500 hover:scale-105 transition-transform">Tailwind css</div> 
+                                        <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-orange-500/10 text-orange-500 hover:scale-105 transition-transform">Pandas</div> 
+                                        <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-orange-500/10 text-orange-500 hover:scale-105 transition-transform">Scikit-learn</div> 
+                                        <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-orange-500/10 text-orange-500 hover:scale-105 transition-transform">TensorFlow</div> 
                                         <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-orange-500/10 text-orange-500 hover:scale-105 transition-transform">SQL</div> 
                                         <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-orange-500/10 text-orange-500 hover:scale-105 transition-transform">React</div>
                                         <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-orange-500/10 text-orange-500 hover:scale-105 transition-transform">Next.js</div>

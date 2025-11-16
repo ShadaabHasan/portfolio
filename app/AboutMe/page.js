@@ -39,9 +39,8 @@ const page = () => {
                             </div>
                             <div className='text-gray-400 text-sm md:text-xl mt-5 w-11/12'>
                                 <p>
-                                    An aspiring Data Scientist currently pursuing BE Computer Engineering.
-                                    I love building AI-driven applications, exploring new technologies, and solving real-world problems
-                                    through data and machine learning.
+                                    A Data Scientist currently pursuing an M.Sc. in Data Analytics at the University of Galway. 
+                                    I love building AI-driven applications, exploring new technologies, and solving real-world problems through data and machine learning.
                                 </p>
                             </div>
                             <DownloadResume />                            
@@ -73,6 +72,19 @@ const page = () => {
                                 <div>
                                     <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-5">
                                     <div>
+                                    <h3 className="font-semibold text-lg">M.Sc Computer Science (Data Analytics)</h3>
+                                    <p className="text-muted-foreground text-sm text-gray-400">University Of Galway</p>
+                                    </div>
+                                    <div className="text-right">
+                                    <p className="text-sm text-muted-foreground">2025 - Present</p>
+                                    <p className="text-sm font-medium text-primary">CGPA: -</p>
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-5">
+                                    <div>
                                     <h3 className="font-semibold text-lg">B.E. Computer Engineering</h3>
                                     <p className="text-muted-foreground text-sm text-gray-400">Rizvi College of Engineering</p>
                                     </div>
@@ -82,8 +94,8 @@ const page = () => {
                                     </div>
                                     </div>
                                 </div>
+
                                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-5">
-                                
                                     <div>
                                     <h3 className="font-semibold text-lg">HSC</h3>
                                     <p className="text-muted-foreground text-sm text-gray-400">Mithibai College, Major in IT</p>
@@ -91,9 +103,9 @@ const page = () => {
                                     <div className="text-right">
                                     <p className="text-sm text-muted-foreground">2019 - 2021</p><p className="text-sm font-medium text-primary">88.35%</p>
                                     </div>
-                                    </div>
-                                    <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-5">
+                                </div>
                                 
+                                <div className="flex flex-col md:flex-row md:items-start md:justify-between">
                                     <div>
                                     <h3 className="font-semibold text-lg">CISCE</h3>
                                     <p className="text-muted-foreground text-sm text-gray-400">SVKM’s Chatrabhuj Narsee Memorial School</p>
@@ -101,7 +113,7 @@ const page = () => {
                                     <div className="text-right">
                                     <p className="text-sm text-muted-foreground">2009 - 2019</p><p className="text-sm font-medium text-primary">89.45%</p>
                                     </div>
-                                    </div>
+                                </div>
                             </div>
                             
                             
@@ -163,6 +175,21 @@ const page = () => {
                                     </div>
                                     <h3 className="inline-flex items-center text-2xl font-semibold ">Certifications</h3>
                                 </div>
+
+                                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-5">
+                                    <div>
+                                        <a href='https://www.linkedin.com/in/shadaab-hasan-4a9b92271/details/certifications/1725463226053/single-media-viewer/?profileId=ACoAAEKPfUEBMawgeASsNZZZLZBbvvHHuZlIud0'> 
+                                    <h3 className="font-semibold text-lg">
+                                    Data Analytics with Python</h3></a>
+                                    <p className="text-muted-foreground text-sm text-gray-400">NPTEL</p>
+                                    </div>
+                                    <div className="text-right">
+                                    <p className="text-sm text-muted-foreground">May 16, 2025</p>
+                                    {/* <p className="text-sm font-medium text-primary">CGPA: 7.77</p> */}
+                                    </div>
+                                    
+                                </div>
+
                                 <div>
                                     <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-5">
                                     <div>
@@ -190,7 +217,7 @@ const page = () => {
                                     
                                     </div>
 
-                                    <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-5">
+                                    <div className="flex flex-col md:flex-row md:items-start md:justify-between">
                                     <div>
                                         <a href='https://www.linkedin.com/in/shadaab-hasan-4a9b92271/details/certifications/1725463226053/single-media-viewer/?profileId=ACoAAEKPfUEBMawgeASsNZZZLZBbvvHHuZlIud0'> 
                                     <h3 className="font-semibold text-lg">
