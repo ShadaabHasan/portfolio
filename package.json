@@ -14,7 +14,7 @@
     "firebase": "^11.3.1",
     "firebase-admin": "^13.1.0",
     "framer-motion": "^12.4.10",
-    "next": "15.1.6",
+    "next": "15.1.11",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-hook-form": "^7.54.2",
