@@ -1,4 +1,4 @@
-# My Developer Portfolio
+# Shadaab Hasan
 
 A personal portfolio website built with **Next.js** and deployed on **Vercel**, featuring a **contact form** integrated with **Firebase Firestore**.
 
