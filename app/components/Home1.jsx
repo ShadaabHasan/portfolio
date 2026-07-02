@@ -19,7 +19,7 @@ const Home = () => {
         </div>
             
         <div className="w-1/2 hidden md:flex justify-end">
-              <div style={{ opacity: 1, transform: "none" }} className='mt-28 p-12'>
+              <div style={{ opacity: 1, transform: "none" }} className='mt-28 p-4'>
             <svg
               viewBox="0 0 1300 906"
               fill="none"
