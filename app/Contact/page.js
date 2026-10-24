@@ -10,8 +10,7 @@ import { useEffect, useState } from "react";
 
 const page = () => {
   
-  const { register, formState: { errors } } = useForm();
-  // const onSubmit = data => console.log(data);
+  const { register, handleSubmit, reset, formState: { errors } } = useForm();  // const onSubmit = data => console.log(data);
   // console.log(errors);
   // const textAreaRef = useRef(null);
 
@@ -21,28 +20,23 @@ const page = () => {
     textarea.style.height = `${textarea.scrollHeight}px`; // Expand to fit content
   };
 
-  async function handleSubmit(event) {
-  event.preventDefault();
-  const formData = {
-    name: event.target.name.value,
-    email: event.target.email.value,
-    message: event.target.message.value,
-  };
+  async function onSubmit(data) {
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
 
-  try {
-    const response = await fetch("/api/contact", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(formData),
-    });
+      const result = await response.json();
+      alert(result.message);
 
-    const data = await response.json();
-    alert(data.message);
-  } catch (error) {
-    console.error("Error:", error);
-    alert("Something went wrong!");
+      if (response.ok) reset(); // clear the form after a successful send
+    } catch (error) {
+      console.error("Error:", error);
+      alert("Something went wrong!");
+    }
   }
-}
   
  const [isBottom, setIsBottom] = useState(false);
          
@@ -72,7 +66,7 @@ const page = () => {
       Fill out the form below and I'll get back to you as soon as possible.
       </div>
       <div className='pl-10 mr-10 md:pl-44 md:mr-96'>
-        <form className="w-full max-w mt-9" onSubmit={handleSubmit}>
+          <form className="w-full max-w mt-9" onSubmit={handleSubmit(onSubmit)}>
           <div className="mb-4">
             <label className="block text-gray-300"></label>
             <input type="text" {...register("name", { required: true })} 
@@ -101,7 +95,7 @@ const page = () => {
               placeholder="Your message..."
               
             ></textarea>
-
+            {errors.message && <p className="text-red-500 text-sm">Message is required.</p>}  
           </div>
 
           <button type="submit" className="btn btn-secondary-contact">
