@@ -25,8 +25,8 @@ const AboutMePage = () => {
                             </div>
                             <div className='text-gray-400 text-sm md:text-xl mt-5 w-11/12'>
                                 <p>
-                                    A Data Scientist currently pursuing an M.Sc. in Data Analytics at the University of Galway. 
-                                    I love building AI-driven applications, exploring new technologies, and solving real-world problems through data and machine learning.
+                                    A Data Scientist with an M.Sc. in Computer Science (Data Analytics) from the University of Galway. 
+                                    I build machine learning and computer vision models, and I enjoy solving real-world problems with data.
                                 </p>
                             </div>
                             <DownloadResume />                            
@@ -62,8 +62,8 @@ const AboutMePage = () => {
                                     <p className="text-muted-foreground text-sm text-gray-400">University Of Galway</p>
                                     </div>
                                     <div className="text-right">
-                                    <p className="text-sm text-muted-foreground">2025 - Present</p>
-                                    <p className="text-sm font-medium text-primary">CGPA: -</p>
+                                    <p className="text-sm text-muted-foreground">2025 - 2026</p>
+                                    <p className="text-sm font-medium text-primary">2.1 (Second Class Honours, Grade 1)</p>
                                     </div>
                                     </div>
                                 </div>

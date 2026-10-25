@@ -16,9 +16,9 @@ const Aboutme1 = () => {
                                 {"{About Me}"}
                             </div>
                             <h2 className="text-4xl md:text-5xl font-bold mb-8">
-                                Transforming complex data into useful insights 
+                                Building machine learning models that work on real-world data
                             </h2>
-                            <p className="text-lg text-muted-foreground max-w-2xl mx-auto grey">Masters student at the University of Galway, building innovative solutions powered by AI/ML and data-driven decision-making.</p>
+                            <p className="text-lg text-muted-foreground max-w-2xl mx-auto grey">Data Scientist with an M.Sc. in Computer Science (Data Analytics) from the University of Galway.</p>
                         </div>
                         <div className="grid lg:grid-cols-5 gap-8 items-start mb-12 m-10">
                             <div className="rounded-xl border bg-card text-card-foreground shadow lg:col-span-2 p-6 hover:shadow-md transition-shadow py-11">
@@ -32,7 +32,11 @@ const Aboutme1 = () => {
                                     </div>
                                     <h3 className="inline-flex items-center text-2xl font-semibold">Background</h3>
                                 </div>
-                                <p className="inline-flex items-center text-muted-foreground leading-relaxed text-l py-7">Currently pursuing an M.Sc. in Data Analytics at the University of Galway, I am passionate about applying AI and data science to solve real-world problems. My expertise includes building predictive models, leveraging NLP for text analysis, and engineering scalable data science solutions.</p>
+                                <p className="inline-flex items-center text-muted-foreground leading-relaxed text-l py-7">
+                                    I recently finished my M.Sc. in Computer Science (Data Analytics) at the University of Galway, 
+                                    where my thesis focused on tracking honeybees with event cameras. I build machine learning and computer vision models, 
+                                    and I enjoy turning messy data into results people can use.
+                                </p>
                             </div>
                             <div className="lg:col-span-3 grid sm:grid-cols-2 gap-3">
                                 <div className="rounded-xl border bg-card text-card-foreground shadow p-6 hover:shadow-md transition-shadow">

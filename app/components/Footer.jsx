@@ -10,8 +10,8 @@ const Footer = () => {
                         <div className="space-y-4">
                             <h3 className="text-2xl font-semibold">Portfolio</h3>
                             <p className="text-sm text-foreground/60">
-                            ©2025 Shadaab Hasan.</p>
-                        </div>
+                        ©{new Date().getFullYear()} Shadaab Hasan.</p>
+                    </div>
                         <div className="space-y-4">
                             <h3 className="text-2xl font-semibold">Quick Links</h3>
                             <nav className="flex flex-col space-y-2">
