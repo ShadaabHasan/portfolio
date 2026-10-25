@@ -1,6 +1,5 @@
-import { db } from "@/lib/firebaseAdmin";
+import { getDb } from "@/lib/firebaseAdmin";
 
-// A simple check that the email looks like "something@something.something"
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export async function POST(req) {
@@ -27,7 +26,7 @@ export async function POST(req) {
       return Response.json({ message: "Your message is too long." }, { status: 400 });
     }
 
-    await db.collection("messages").add({
+    await getDb().collection("messages").add({
       name,
       email,
       message,
