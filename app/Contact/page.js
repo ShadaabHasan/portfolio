@@ -3,7 +3,6 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
 // import { useRef } from 'react';
-import Navbar from "../components/Navbar";
 import Footer from '../components/Footer';
 import useIsBottom from "../hooks/useIsBottom";
 
@@ -41,7 +40,6 @@ const page = () => {
 
   return (
     <>
-    <Navbar />
     <div className='purple-footer text-white'>
     <div className={`transition-all duration-300 ${isBottom ? "m-5" : "m-0"}`}>
 

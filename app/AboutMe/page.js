@@ -1,7 +1,6 @@
 'use client'
 
 import React from 'react'
-import Navbar from '../components/Navbar'
 import useIsBottom from "../hooks/useIsBottom";
 import Footer from '../components/Footer';
 import DownloadResume from './DownloadResume';
@@ -11,7 +10,6 @@ const page = () => {
     const isBottom = useIsBottom(400);
     return (
     <>
-      <Navbar />
       <div className='black-footer text-white'>
         <div className={`transition-all duration-300 ${isBottom ? "m-5" : "m-0"}`}>
             <div className='bg-gradient-to-br from-gray-900 to-slate-800 rounded-b-3xl text-white pb-20'>

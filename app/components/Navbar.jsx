@@ -1,10 +1,12 @@
+'use client'
+
 import React from 'react'
 import { useRouter } from 'next/navigation';
 import { useState } from "react";
 import {motion, AnimatePresence} from "framer-motion"
 
 
-const navbar = () => {
+const Navbar = () => {
   const router = useRouter(); // Initialize router
   const [isOpen, setIsOpen] = useState(false);
 
@@ -71,4 +73,4 @@ const navbar = () => {
   )
 }
 
-export default navbar
+export default Navbar

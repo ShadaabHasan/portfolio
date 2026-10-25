@@ -1,7 +1,6 @@
 'use client'
 
 import React from 'react'
-import Navbar from "../components/Navbar";
 import Footer from '../components/Footer';
 import ProjectCard from "../components/ProjectCard";
 import { projects } from "@/data/projects";
@@ -12,7 +11,6 @@ const AllProjects = () => {
 
   return (
     <>
-      <Navbar />
       <div className='red-footer'>
         <div className={`transition-all duration-300 ${isBottom ? "m-5" : "m-0"}`}>
           <div className='min-h-screen bg-gradient-to-br from-slate-900 to-rose-800 text-white pb-20 rounded-b-3xl'>
