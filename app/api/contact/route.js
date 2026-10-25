@@ -1,28 +1,43 @@
 import { db } from "@/lib/firebaseAdmin";
 
+// A simple check that the email looks like "something@something.something"
+const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
 export async function POST(req) {
   try {
     const body = await req.json();
-    const { name, email, message } = body;
 
+    // Turn each value into text and remove extra spaces at the start and end
+    const name = String(body.name ?? "").trim();
+    const email = String(body.email ?? "").trim();
+    const message = String(body.message ?? "").trim();
+
+    // Check 1: nothing is empty
     if (!name || !email || !message) {
-      return new Response(JSON.stringify({ message: "All fields are required" }), { status: 400 });
+      return Response.json({ message: "All fields are required." }, { status: 400 });
     }
 
-    console.log("New Contact Form Submission:", { name, email, message });
+    // Check 2: the email looks real
+    if (!EMAIL_PATTERN.test(email)) {
+      return Response.json({ message: "Please enter a valid email address." }, { status: 400 });
+    }
 
-    const docRef = await db.collection("messages").add({
+    // Check 3: nothing is too long (stops people filling your database with junk)
+    if (name.length > 100 || email.length > 200 || message.length > 5000) {
+      return Response.json({ message: "Your message is too long." }, { status: 400 });
+    }
+
+    await db.collection("messages").add({
       name,
       email,
       message,
       timestamp: new Date(),
     });
 
-    console.log("Message saved to Firestore with ID:", docRef.id);
-
-    return new Response(JSON.stringify({ message: "Your message has been sent!", id: docRef.id }), { status: 200 });
+    return Response.json({ message: "Your message has been sent!" });
   } catch (error) {
-    console.error("Error saving message to Firestore:", error);
-    return new Response(JSON.stringify({ message: "Something went wrong!", error: error.message }), { status: 500 });
+    // Log the problem for you, but don't show details to the visitor
+    console.error("Contact form error:", error.message);
+    return Response.json({ message: "Something went wrong. Please try again." }, { status: 500 });
   }
 }
