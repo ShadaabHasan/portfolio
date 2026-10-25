@@ -1,42 +1,22 @@
-// 'use client'
-// import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import Navbar from "./components/Navbar";
 
+const inter = Inter({ subsets: ["latin"] });
 
-
-const inter = Inter({
-  subsets: ["latin"]
-});
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
-
+// Shown in the browser tab, in Google results, and in link previews
 export const metadata = {
-  title: "Shadaab Hasan | Portfolio",
-  description: "",
-  icons: {
-    icon:"/favicon.ico"
-  },
+  title: "Shadaab Hasan | Data Scientist",
+  description:
+    "Shadaab Hasan is a Data Scientist with an M.Sc. in Computer Science (Data Analytics) from the University of Galway, working on machine learning, computer vision and NLP.",
 };
 
-
-
 export default function RootLayout({ children }) {
-
-
-  // Define page-specific classes
- 
   return (
     <html lang="en" className="scroll-smooth">
-      <body
-        className={`${inter.className} antialiased`}
-      >
+      <body className={`${inter.className} antialiased`}>
         <Navbar />
         {children}
         <Analytics />
