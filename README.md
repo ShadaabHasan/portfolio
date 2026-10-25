@@ -1,31 +1,34 @@
-# Shadaab Hasan
+# Shadaab Hasan – Portfolio
 
-A personal portfolio website built with **Next.js** and deployed on **Vercel**, featuring a **contact form** integrated with **Firebase Firestore**.
+My personal portfolio website, built with **Next.js** and deployed on **Vercel**.
+
+🔗 **Live site:** [shadaabhasan.vercel.app](https://shadaabhasan.vercel.app)
 
 ## Features
 
- - Responsive and modern UI
- - About Me & Projects Showcase
- - Contact Form connected to Firebase Firestore 
- - Deployed on Vercel
+- About, Projects and Contact pages
+- All projects stored in one data file (`data/projects.js`), shown with a reusable card component
+- Contact form with checks in the browser and on the server, saving messages to Firebase Firestore
 
----
+## Tech stack
 
-## Tech Stack
-
-- **Frontend:** Next.js 15, React, Tailwind CSS
-- **Backend:** Firebase Firestore (for contact form storage)
+- **Frontend:** Next.js 16 (App Router), React 19, Tailwind CSS, Framer Motion
+- **Backend:** Next.js API route + Firebase Admin (Firestore)
 - **Deployment:** Vercel
 
----
+## Running it locally
+
+1. Install the packages:
+   ```bash
+   npm install
+   ```
+2. Create a `.env.local` file in the main folder with your Firebase service account key: FIREBASE_ADMIN_KEY='{“type”:”service_account”, ...}'
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+4. Open [http://localhost:3000](http://localhost:3000).
+
 ## Contact
 
-If you have any questions or issues, feel free to reach out!
-
-📧 [Email](mailto:shadaabhasan7@gmail.com) 🔗 [LinkedIn](www.linkedin.com/in/shadaab-hasan-4a9b92271)
-
-## Live Demo
-
-🔗 [View Portfolio](https://ShadaabHasan.vercel.app)
-
-
+📧 [shadaabhasan7@gmail.com](mailto:shadaabhasan7@gmail.com) · 🔗 [LinkedIn](https://www.linkedin.com/in/shadaab-hasan-4a9b92271/)

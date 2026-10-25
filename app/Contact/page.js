@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 import useIsBottom from "../hooks/useIsBottom";
 import SocialLinks from "../components/SocialLinks";
 
-const page = () => {
+const ContactPage = () => {
   
   const { register, handleSubmit, reset, formState: { errors } } = useForm();  // const onSubmit = data => console.log(data);
   // console.log(errors);
@@ -103,5 +103,5 @@ const page = () => {
   )
 }
 
-export default page
+export default ContactPage
 

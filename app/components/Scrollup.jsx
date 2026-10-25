@@ -1,6 +1,5 @@
 'use client'
 
-import { Container } from 'postcss'
 import React from 'react'
 
 const Scrollup = () => {

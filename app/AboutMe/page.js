@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 import DownloadResume from './DownloadResume';
 
 
-const page = () => {
+const AboutMePage = () => {
     const isBottom = useIsBottom(400);
     return (
     <>
@@ -239,4 +239,4 @@ const page = () => {
   )
 }
 
-export default page
+export default AboutMePage
