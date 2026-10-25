@@ -8,7 +8,10 @@ const inter = Inter({ subsets: ["latin"] });
 
 // Shown in the browser tab, in Google results, and in link previews
 export const metadata = {
-  title: "Shadaab Hasan | Data Scientist",
+   title: {
+    default: "Shadaab Hasan | Data Scientist",
+    template: "%s | Shadaab Hasan",
+  },
   description:
     "Shadaab Hasan is a Data Scientist with an M.Sc. in Computer Science (Data Analytics) from the University of Galway, working on machine learning, computer vision and NLP.",
 };

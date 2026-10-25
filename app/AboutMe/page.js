@@ -1,17 +1,18 @@
-'use client'
-
 import React from 'react'
-import useIsBottom from "../hooks/useIsBottom";
 import Footer from '../components/Footer';
 import DownloadResume from './DownloadResume';
+import BottomMargin from "../components/BottomMargin";
+
+export const metadata = {
+  title: "About",
+};
 
 
 const AboutMePage = () => {
-    const isBottom = useIsBottom(400);
     return (
     <>
       <div className='black-footer text-white'>
-        <div className={`transition-all duration-300 ${isBottom ? "m-5" : "m-0"}`}>
+        <BottomMargin offset={100}>
             <div className='bg-gradient-to-br from-gray-900 to-slate-800 rounded-b-3xl text-white pb-20'>
                 <div className="container mx-auto padding-top-project">
                     <div className="max-w-4xl mx-auto text-center">
@@ -228,7 +229,7 @@ const AboutMePage = () => {
 
                 </div>
             </div>
-        </div>
+        </BottomMargin>
         <div className='mt-16'>
         <Footer />
 
