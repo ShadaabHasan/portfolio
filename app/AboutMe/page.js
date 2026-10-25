@@ -2,27 +2,14 @@
 
 import React from 'react'
 import Navbar from '../components/Navbar'
-import { useEffect, useState } from "react";
+import useIsBottom from "../hooks/useIsBottom";
 import Footer from '../components/Footer';
 import DownloadResume from './DownloadResume';
 
 
 const page = () => {
-
-        const [isBottom, setIsBottom] = useState(false);
-        
-          useEffect(() => {
-            const handleScroll = () => {
-              const scrollPosition = window.innerHeight + window.scrollY;
-              const pageHeight = document.documentElement.scrollHeight;
-              
-              // Check if the user has reached the bottom
-              setIsBottom(scrollPosition >= pageHeight - 100);
-            };
-        
-            window.addEventListener("scroll", handleScroll);
-            return () => window.removeEventListener("scroll", handleScroll);  }, []);
-  return (
+    const isBottom = useIsBottom(400);
+    return (
     <>
       <Navbar />
       <div className='black-footer text-white'>

@@ -10,7 +10,7 @@ import Scrollup from "./components/Scrollup";
 // import { usePathname } from "next/navigation";
 
 
-import { useEffect, useState } from "react";
+import useIsBottom from "./hooks/useIsBottom";
 
 // export default function ScrollEffectComponent() {
   
@@ -22,20 +22,8 @@ export default function Home() {
   // pathname === "/AllProjects" ? "projects-page" :
   // pathname === "/contact" ? "contact-page" : "";
 
-  const [isBottom, setIsBottom] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.innerHeight + window.scrollY;
-      const pageHeight = document.documentElement.scrollHeight;
-      
-      // Check if the user has reached the bottom
-      setIsBottom(scrollPosition >= pageHeight - 400);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  const isBottom = useIsBottom(400);
+  
   return (
     <>
     

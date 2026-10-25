@@ -5,23 +5,10 @@ import Navbar from "../components/Navbar";
 import Footer from '../components/Footer';
 import ProjectCard from "../components/ProjectCard";
 import { projects } from "@/data/projects";
-import { useEffect, useState } from "react";
+import useIsBottom from "../hooks/useIsBottom";
 
 const AllProjects = () => {
-  const [isBottom, setIsBottom] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.innerHeight + window.scrollY;
-      const pageHeight = document.documentElement.scrollHeight;
-
-      // Check if the user has reached the bottom
-      setIsBottom(scrollPosition >= pageHeight - 400);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  const isBottom = useIsBottom(400);
 
   return (
     <>
