@@ -47,14 +47,6 @@ export const projects = [
     github: "https://github.com/ShadaabHasan/F1-Data-Visualisation",
   },
   {
-    title: "Startup Sage",
-    description:
-      "Team project (4 people): an LSTM model that forecasts daily sales, and a chatbot that answers common questions, both served through Flask APIs.",
-    tags: ["Python", "TensorFlow", "LSTM", "Flask"],
-    image: "/projects/startup-sage-image.jpeg",
-    github: "https://github.com/MustafaAkolawala/Accenture-DedSec",
-  },
-  {
     title: "SummarAIze",
     description:
       "A tool that summarises long text, such as research papers, using a pre-trained BART model from Hugging Face.",
