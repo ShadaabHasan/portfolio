@@ -15,8 +15,8 @@ export const projects = [
   {
     title: "Student Feedback Analysis",
     description:
-      "A full system that sorts student feedback into positive, neutral and negative. Compared 8 models, from Logistic Regression to fine-tuned BERT, reaching 73% accuracy, with dashboards for students and teachers and Llama 3 suggestions for teachers.",
-    tags: ["Python", "BERT", "Hugging Face", "Flask", "Next.js"],
+      "Team project: a system that sorts student feedback into positive, neutral or negative, with dashboards for teachers. My part was the model: I compared models from Logistic Regression to fine-tuned BERT on about 72,000 texts, reaching 72% accuracy on 14,612 test texts.",
+    tags: ["Python", "BERT", "Hugging Face", "scikit-learn", "NLP"],
     image: "/projects/student-feedback-system.png",
     github: "https://github.com/ShadaabHasan/student-review-system",
     featured: true,

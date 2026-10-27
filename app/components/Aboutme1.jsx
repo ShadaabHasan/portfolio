@@ -1,5 +1,13 @@
 import React from 'react'
 
+// My skills, written once. To add one, just add a word to the right list.
+const aiSkills = ["Machine Learning", "Deep Learning", "Computer Vision", "NLP", "Predictive Modelling"];
+const toolSkills = ["Git", "Linux", "AWS", "Jupyter", "Next.js"];
+const techSkills = ["Python", "R", "SQL", "PyTorch", "TensorFlow", "scikit-learn", "Hugging Face", "OpenCV", "Pandas"];
+
+// The style shared by every tag. Only the colour changes per card.
+const tagStyle = "inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold hover:scale-105 transition-transform";
+
 const Aboutme1 = () => {
   return (
     <>
@@ -57,10 +65,9 @@ const Aboutme1 = () => {
                                         <h3 className="text-xl font-semibold">AI &amp; Machine Learning</h3>
                                     </div>
                                     <div className="flex flex-wrap gap-2">
-                                        <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-purple-500/10 text-purple-500 hover:scale-105 transition-transform">NLP</div>
-                                        <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-purple-500/10 text-purple-500 hover:scale-105 transition-transform">Data Science</div>
-                                        <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-purple-500/10 text-purple-500 hover:scale-105 transition-transform">Machine Learning</div>
-                                        <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-purple-500/10 text-purple-500 hover:scale-105 transition-transform">Predictive Modelling</div>
+                                        {aiSkills.map((skill) => (
+                                            <div key={skill} className={`${tagStyle} bg-purple-500/10 text-purple-500`}>{skill}</div>
+                                        ))}
                                     </div>
                                 </div>
                                 <div className="rounded-xl border bg-card text-card-foreground shadow p-6 hover:shadow-md transition-shadow">
@@ -71,11 +78,12 @@ const Aboutme1 = () => {
                                                 <polyline points="8 6 2 12 8 18"></polyline>
                                             </svg>
                                         </div>
-                                        <h3 className="text-xl font-semibold">Development</h3>
+                                        <h3 className="text-xl font-semibold">Tools &amp; Cloud</h3>
                                     </div>
                                     <div className="flex flex-wrap gap-2">
-                                        <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-green-500/10 text-green-500 hover:scale-105 transition-transform">Full-Stack</div>
-                                        <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-green-500/10 text-green-500 hover:scale-105 transition-transform">Django</div>
+                                        {toolSkills.map((skill) => (
+                                            <div key={skill} className={`${tagStyle} bg-green-500/10 text-green-500`}>{skill}</div>
+                                        ))}
                                     </div>
                                 </div>
                                 <div className="rounded-xl border bg-card text-card-foreground shadow p-6 hover:shadow-md transition-shadow">
@@ -86,16 +94,12 @@ const Aboutme1 = () => {
                                                 <line x1="12" x2="20" y1="19" y2="19"></line>
                                             </svg>
                                         </div>
-                                        <h3 className="text-xl font-semibold">Technologies</h3>
+                                        <h3 className="text-xl font-semibold">Languages &amp; Libraries</h3>
                                     </div>
                                     <div className="flex flex-wrap gap-2">
-                                        <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-orange-500/10 text-orange-500 hover:scale-105 transition-transform">Python</div>
-                                        <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-orange-500/10 text-orange-500 hover:scale-105 transition-transform">Pandas</div> 
-                                        <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-orange-500/10 text-orange-500 hover:scale-105 transition-transform">Scikit-learn</div> 
-                                        <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-orange-500/10 text-orange-500 hover:scale-105 transition-transform">TensorFlow</div> 
-                                        <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-orange-500/10 text-orange-500 hover:scale-105 transition-transform">SQL</div> 
-                                        <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-orange-500/10 text-orange-500 hover:scale-105 transition-transform">React</div>
-                                        <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-orange-500/10 text-orange-500 hover:scale-105 transition-transform">Next.js</div>
+                                        {techSkills.map((skill) => (
+                                            <div key={skill} className={`${tagStyle} bg-orange-500/10 text-orange-500`}>{skill}</div>
+                                        ))}
                                     </div>
                                 </div>
                             </div>
