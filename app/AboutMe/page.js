@@ -124,7 +124,7 @@ const AboutMePage = () => {
                                 <div>
                                     <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-5">
                                     <div>
-                                        <a href='https://www.jetir.org/view?paper=JETIR2406947'> 
+                                        <a href='https://www.jetir.org/view?paper=JETIR2406947' target="_blank" rel="noopener noreferrer"> 
                                     <h3 className="font-semibold text-lg">Skin Cancer Recognition System</h3></a>
                                     <p className="text-muted-foreground text-sm text-gray-400">Journal of Emerging Technologies and Innovative Research</p>
                                     </div>
@@ -164,7 +164,7 @@ const AboutMePage = () => {
 
                                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-5">
                                     <div>
-                                        <a href='https://www.linkedin.com/in/shadaab-hasan-4a9b92271/details/certifications/1725463226053/single-media-viewer/?profileId=ACoAAEKPfUEBMawgeASsNZZZLZBbvvHHuZlIud0'> 
+                                        <a href='/certificates/NPTEL-Data-Analytics-with-Python.pdf' target="_blank" rel="noopener noreferrer"> 
                                     <h3 className="font-semibold text-lg">
                                     Data Analytics with Python</h3></a>
                                     <p className="text-muted-foreground text-sm text-gray-400">NPTEL</p>
@@ -179,7 +179,7 @@ const AboutMePage = () => {
                                 <div>
                                     <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-5">
                                     <div>
-                                        <a href='https://www.coursera.org/account/accomplishments/certificate/C6TSEDWSJ24X'> 
+                                        <a href='https://www.coursera.org/account/accomplishments/certificate/C6TSEDWSJ24X' target="_blank" rel="noopener noreferrer"> 
                                     <h3 className="font-semibold text-lg">Applied Machine Learning in Python</h3></a>
                                     <p className="text-muted-foreground text-sm text-gray-400">University of Michigan</p>
                                     </div>
@@ -192,7 +192,7 @@ const AboutMePage = () => {
 
                                     <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-5">
                                     <div>
-                                        <a href='https://www.credly.com/badges/1ff729b5-7ab3-4936-a8ed-18c362e89538/linked_in_profile'> 
+                                        <a href='https://www.credly.com/badges/1ff729b5-7ab3-4936-a8ed-18c362e89538/linked_in_profile' target="_blank" rel="noopener noreferrer"> 
                                     <h3 className="font-semibold text-lg">AWS Academy Cloud Foundations</h3></a>
                                     <p className="text-muted-foreground text-sm text-gray-400">Amazon Web Services (AWS)</p>
                                     </div>
@@ -202,21 +202,6 @@ const AboutMePage = () => {
                                     </div>
                                     
                                     </div>
-
-                                    <div className="flex flex-col md:flex-row md:items-start md:justify-between">
-                                    <div>
-                                        <a href='https://www.linkedin.com/in/shadaab-hasan-4a9b92271/details/certifications/1725463226053/single-media-viewer/?profileId=ACoAAEKPfUEBMawgeASsNZZZLZBbvvHHuZlIud0'> 
-                                    <h3 className="font-semibold text-lg">
-                                    AI&ML Workshop</h3></a>
-                                    <p className="text-muted-foreground text-sm text-gray-400">Techobytes Technologies</p>
-                                    </div>
-                                    <div className="text-right">
-                                    <p className="text-sm text-muted-foreground">Mar 10, 2024</p>
-                                    {/* <p className="text-sm font-medium text-primary">CGPA: 7.77</p> */}
-                                    </div>
-                                    
-                                    </div>
-
                                 </div>
                                 
                             </div>
