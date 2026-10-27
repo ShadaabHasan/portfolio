@@ -8,6 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 // Shown in the browser tab, in Google results, and in link previews
 export const metadata = {
+  metadataBase: new URL("https://shadaabhasan.vercel.app"),
    title: {
     default: "Shadaab Hasan | Data Scientist",
     template: "%s | Shadaab Hasan",
