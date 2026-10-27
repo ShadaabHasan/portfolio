@@ -1,38 +1,29 @@
-import Footer from '../components/Footer';
-import ProjectCard from "../components/ProjectCard";
-import BottomMargin from "../components/BottomMargin";
+import Footer from "../components/Footer";
+import ProjectRow from "../components/ProjectRow";
 import { projects } from "@/data/projects";
 
 export const metadata = {
   title: "Projects",
 };
 
-const AllProjects = () => {
+export default function AllProjects() {
   return (
-    <div className='red-footer'>
-      <BottomMargin offset={400}>
-        <div className='min-h-screen bg-gradient-to-br from-slate-900 to-rose-800 text-white pb-20 rounded-b-3xl'>
-          <div className="container mx-auto padding-top-project">
-            <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl font-bold">All Projects</h2>
-              <p className="mt-4 text-lg grey">
-                A showcase of my recent projects, demonstrating my skills in AI, machine learning, and more.
-              </p>
-            </div>
+    <>
+      <main className="max-w-[1240px] mx-auto px-5 md:px-10 pb-20">
+        <header className="pt-16 md:pt-24 pb-6 border-b border-line">
+          <h1 className="text-5xl md:text-7xl font-extrabold tracking-[-0.03em]">Projects</h1>
+          <p className="mt-6 max-w-[34em] text-lg md:text-xl text-soft">
+            Everything I've built, strongest work first. Each project says what I built and, for team projects,
+            which part was mine.
+          </p>
+        </header>
 
-            <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-20 p-5 mt-6 mx-2 md:mx-20">
-              {projects.map((project) => (
-                <ProjectCard key={project.title} project={project} />
-              ))}
-            </div>
-          </div>
-        </div>
-      </BottomMargin>
-      <div className='red-footer text-white mt-16'>
-        <Footer />
-      </div>
-    </div>
-  )
+        {/* Every project in data/projects.js, featured or not */}
+        {projects.map((project) => (
+          <ProjectRow key={project.title} project={project} />
+        ))}
+      </main>
+      <Footer />
+    </>
+  );
 }
-
-export default AllProjects

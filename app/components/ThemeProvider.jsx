@@ -4,7 +4,7 @@ import { ThemeProvider as NextThemesProvider } from "next-themes";
 
 export default function ThemeProvider({ children }) {
   return (
-    <NextThemesProvider attribute="data-theme" defaultTheme="system" enableSystem disableTransitionOnChange>
+    <NextThemesProvider attribute="data-theme" defaultTheme="light" enableSystem={false} disableTransitionOnChange>
       {children}
     </NextThemesProvider>
   );
