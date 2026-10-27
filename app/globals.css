@@ -2,6 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* Light mode (default) */
+:root {
+  --bg: #EEF1F0;
+  --panel: #F8FAF9;
+  --ink: #15191E;
+  --soft: #2C333B;
+  --muted: #59636E;
+  --box: #2B4BE0;
+  --line: #CDD3D8;
+  --note: #FFF7D1;
+  --note-line: #E6BE2E;
+  --note-ink: #3A3216;
+  color-scheme: light;
+}
+
+ /* Dark mode: used when the switch is set to dark, */
+
+[data-theme="dark"] {
+  --bg: #121A24;
+  --panel: #18222E;
+  --ink: #E8ECF2;
+  --soft: #B7C0CC;
+  --muted: #8592A3;
+  --box: #6F8CFF;
+  --line: #2A3646;
+  --note: #2A2617;
+  --note-line: #D9B23F;
+  --note-ink: #E9DFC0;
+  color-scheme: dark;
+}
+
 .main-section {
     display: flex;
     flex-direction: row;

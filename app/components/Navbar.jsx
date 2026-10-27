@@ -1,76 +1,97 @@
 'use client'
 
-import React from 'react'
-import { useRouter } from 'next/navigation';
+import Link from "next/link";
 import { useState } from "react";
-import {motion, AnimatePresence} from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion";
+import ThemeToggle from "./ThemeToggle";
 
+// The menu links, written once and used for both desktop and mobile
+const links = [
+  { label: "Projects", href: "/AllProjects" },
+  { label: "About", href: "/AboutMe" },
+  { label: "CV", href: "/Shadaab_resume.pdf", external: true },
+  { label: "Contact", href: "/Contact" },
+];
+
+function NavLink({ link, className, onClick }) {
+  // The CV is a PDF, so it opens in a new tab with a normal <a> link
+  if (link.external) {
+    return (
+      <a href={link.href} target="_blank" rel="noopener noreferrer" className={className} onClick={onClick}>
+        {link.label}
+      </a>
+    );
+  }
+  return (
+    <Link href={link.href} className={className} onClick={onClick}>
+      {link.label}
+    </Link>
+  );
+}
 
 const Navbar = () => {
-  const router = useRouter(); // Initialize router
   const [isOpen, setIsOpen] = useState(false);
-
-  const goToHome = () => {
-    router.push('/'); // Force navigation to homepage
-  };
-
 
   return (
     <>
-      <nav className="fixed top-0 w-full max-w-full backdrop-blur z-50 border-b border-border text-white">
-        <div className="container mx-auto px-2 md:px-14">
-          <div className="flex h-16 items-center justify-between">
-            <a className='text-lg font-bold sm:text-lg md:text-xl lg:text-xl' href='/' onClick={goToHome}>Shadaab Hasan | Portfolio </a>
-              <div className="hidden md:flex items-center space-x-6">
-                <a className="hover:text-gray-300" href="/#home">{"Home"}</a>
-                <span className="">|</span>
-                <a className="hover:text-gray-300" href="/AboutMe">{"About"}</a>
-                <span className="">|</span>
-                <a className="hover:text-gray-300" href="/AllProjects">{"Projects"}</a>
-                <span className="">|</span>
-                <a className="hover:text-gray-300" href='/Contact'>{"Contact"}</a>
-              </div>
-               {/* Mobile Menu Button */}
-        <button className="md:hidden text-white text-2xl focus:outline-none mr-4" onClick={() => setIsOpen(!isOpen)}>
-          <motion.div initial={false} animate={{ rotate: isOpen ? 90 : 0 }} transition={{ duration: 0.2, ease: "easeInOut" }}>
-          {isOpen ? "✖" : "☰"}
-          </motion.div>
-        </button>
+      <nav className="sticky top-0 z-50 bg-bg border-b border-line">
+        <div className="max-w-[1240px] mx-auto px-5 md:px-10 h-16 flex items-center justify-between">
+          <Link href="/" className="font-bold text-ink">
+            Shadaab Hasan
+          </Link>
+
+          {/* Desktop menu */}
+          <div className="hidden md:flex items-center gap-8">
+            {links.map((link) => (
+              <NavLink key={link.label} link={link} className="text-muted hover:text-ink transition-colors" />
+            ))}
+            <ThemeToggle />
           </div>
-         
+
+          {/* Mobile: theme switch + menu button */}
+          <div className="flex md:hidden items-center gap-2">
+            <ThemeToggle />
+            <button
+              className="w-10 h-10 flex items-center justify-center text-ink text-2xl"
+              onClick={() => setIsOpen(true)}
+              aria-label="Open menu"
+            >
+              ☰
+            </button>
+          </div>
         </div>
-        </nav>
+      </nav>
 
-        
-
-         {/* Mobile Menu */}
-         <AnimatePresence>
+      {/* Mobile menu */}
+      <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ opacity: 0, y: 0 }}
-            animate={{ opacity: 1, y: "0%" }}
-            exit={{ opacity: 0, y: 0 }}
-            transition={{ duration: 0.4, ease: "easeInOut" }}
-            className="fixed inset-0 bg-[rgba(56,56,56,0.75)] backdrop-blur-lg flex flex-col justify-center text-white text-2xl z-50">
-            <div className='flex flex-col space-y-8 items-start mx-10'>  
-            <a href="/#home" className="hover:text-gray-300" onClick={() => setIsOpen(false)}>Home</a>
-            <a href="/AboutMe" className="hover:text-gray-300" onClick={() => setIsOpen(false)}>About</a>
-            <a href="/AllProjects" className="hover:text-gray-300" onClick={() => setIsOpen(false)}>Projects</a>
-            <a href="/Contact" className="hover:text-gray-300" onClick={() => setIsOpen(false)}>Contact</a>
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
+            className="fixed inset-0 z-50 bg-bg flex flex-col"
+          >
+            <div className="h-16 px-5 flex items-center justify-between border-b border-line">
+              <span className="font-bold text-ink">Shadaab Hasan</span>
+              <button
+                className="w-10 h-10 flex items-center justify-center text-ink text-2xl"
+                onClick={() => setIsOpen(false)}
+                aria-label="Close menu"
+              >
+                ✕
+              </button>
             </div>
-            {/* Close Button inside Menu */}
-            <button className="absolute top-0 right-6 mt-4 text-white text-3xl" onClick={() => setIsOpen(false)}>
-            <motion.div initial={false} animate={{ rotate: isOpen ? 90 : 0 }} transition={{ duration: 0.4, ease: "easeInOut" }}>
-              {isOpen ? "✖" : "☰"}
-            </motion.div>
-              
-            </button>
+            <div className="flex flex-col gap-6 px-5 pt-10 text-3xl font-semibold">
+              {links.map((link) => (
+                <NavLink key={link.label} link={link} className="text-ink" onClick={() => setIsOpen(false)} />
+              ))}
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
-        
     </>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
