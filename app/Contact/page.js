@@ -6,10 +6,14 @@ import { useForm } from 'react-hook-form'
 import Footer from '../components/Footer';
 import useIsBottom from "../hooks/useIsBottom";
 import SocialLinks from "../components/SocialLinks";
+import { useState } from "react";
 
 const ContactPage = () => {
   
-  const { register, handleSubmit, reset, formState: { errors } } = useForm();  // const onSubmit = data => console.log(data);
+  const { register, handleSubmit, reset, formState: { errors, isSubmitting } } = useForm();
+
+  // The message shown under the button after sending, e.g. { type: "success", text: "..." }
+  const [status, setStatus] = useState(null);
   // console.log(errors);
   // const textAreaRef = useRef(null);
 
@@ -19,7 +23,9 @@ const ContactPage = () => {
     textarea.style.height = `${textarea.scrollHeight}px`; // Expand to fit content
   };
 
-  async function onSubmit(data) {
+    async function onSubmit(data) {
+    setStatus(null); // clear any old message
+
     try {
       const response = await fetch("/api/contact", {
         method: "POST",
@@ -28,12 +34,12 @@ const ContactPage = () => {
       });
 
       const result = await response.json();
-      alert(result.message);
+      setStatus({ type: response.ok ? "success" : "error", text: result.message });
 
       if (response.ok) reset(); // clear the form after a successful send
     } catch (error) {
       console.error("Error:", error);
-      alert("Something went wrong!");
+      setStatus({ type: "error", text: "Something went wrong. Please try again." });
     }
   }
   
@@ -49,7 +55,14 @@ const ContactPage = () => {
         <p>{"{Get in touch}"}</p>
       </div>
       <div className='text-lg md:text-2xl text-gray-500 pl-10 mr-10 md:pl-44 md:mr-96'>
-      Fill out the form below and I'll get back to you as soon as possible.
+        <p>Fill out the form below and I'll get back to you as soon as possible.</p>
+        <p className='mt-3 text-base md:text-lg'>
+          Or email me directly at{" "}
+          <a href="mailto:shadaabhasan7@gmail.com" className="text-white underline hover:text-gray-300">
+            shadaabhasan7@gmail.com
+          </a>
+        </p>
+        <p className='mt-1 text-base md:text-lg'>Based in Galway, Ireland.</p>
       </div>
       <div className='pl-10 mr-10 md:pl-44 md:mr-96'>
           <form className="w-full max-w mt-9" onSubmit={handleSubmit(onSubmit)}>
@@ -84,9 +97,15 @@ const ContactPage = () => {
             {errors.message && <p className="text-red-500 text-sm">Message is required.</p>}  
           </div>
 
-          <button type="submit" className="btn btn-secondary-contact">
-            Send Message
+          <button type="submit" className="btn btn-secondary-contact" disabled={isSubmitting}>
+            {isSubmitting ? "Sending..." : "Send Message"}
           </button>
+
+          {status && (
+            <p className={`mt-4 text-sm ${status.type === "success" ? "text-green-400" : "text-red-400"}`}>
+              {status.text}
+            </p>
+          )}
           
           
           <SocialLinks className="mt-7 ml-1" />
