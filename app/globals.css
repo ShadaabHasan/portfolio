@@ -262,3 +262,8 @@
 }
 .box-corners::before { left: 8px; top: 8px; border-right: 0; border-bottom: 0; }
 .box-corners::after { right: 8px; bottom: 8px; border-left: 0; border-top: 0; }
+/* Contact panel: swaps the page colours, so it's dark in light mode and light in dark mode */
+.contact-panel {
+  background: var(--ink);
+  color: var(--bg);
+}

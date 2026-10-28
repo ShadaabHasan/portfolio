@@ -1,4 +1,3 @@
-import Footer from "../components/Footer";
 import ProjectRow from "../components/ProjectRow";
 import { projects } from "@/data/projects";
 
@@ -23,7 +22,6 @@ export default function AllProjects() {
           <ProjectRow key={project.title} project={project} />
         ))}
       </main>
-      <Footer />
     </>
   );
 }

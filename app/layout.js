@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Navbar from "./components/Navbar";
 import ThemeProvider from "./components/ThemeProvider";
+import ContactPanel from "./components/ContactPanel";
 
 // One font for the whole site. "variable" lets Tailwind use it as font-sans.
 // const bricolage = Bricolage_Grotesque({ subsets: ["latin"], variable: "--font-sans" });
@@ -24,9 +25,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`scroll-smooth ${jakarta.variable}`} suppressHydrationWarning>
       <body className="font-sans antialiased bg-bg text-ink">
-        <ThemeProvider>
-          <Navbar />
-          {children}
+                <ThemeProvider>
+          {/* The page sits on top (z-10) and covers the contact panel until you scroll past the end */}
+          <div className="relative z-10 bg-bg shadow-[0_30px_60px_rgba(0,0,0,0.15)]">
+            <Navbar />
+            {children}
+          </div>
+          <ContactPanel />
         </ThemeProvider>
         <Analytics />
         <SpeedInsights />
