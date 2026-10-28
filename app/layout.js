@@ -1,4 +1,4 @@
-import { Bricolage_Grotesque } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -6,7 +6,8 @@ import Navbar from "./components/Navbar";
 import ThemeProvider from "./components/ThemeProvider";
 
 // One font for the whole site. "variable" lets Tailwind use it as font-sans.
-const bricolage = Bricolage_Grotesque({ subsets: ["latin"], variable: "--font-sans" });
+// const bricolage = Bricolage_Grotesque({ subsets: ["latin"], variable: "--font-sans" });
+const jakarta = Plus_Jakarta_Sans({ subsets: ["latin"], variable: "--font-sans" });
 
 // Shown in the browser tab, in Google results, and in link previews
 export const metadata = {
@@ -21,7 +22,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`scroll-smooth ${bricolage.variable}`} suppressHydrationWarning>
+    <html lang="en" className={`scroll-smooth ${jakarta.variable}`} suppressHydrationWarning>
       <body className="font-sans antialiased bg-bg text-ink">
         <ThemeProvider>
           <Navbar />

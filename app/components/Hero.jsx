@@ -6,16 +6,12 @@ export default function Hero() {
     <section className="grid md:grid-cols-[1.05fr_1fr] gap-12 md:gap-16 items-center pt-12 pb-16 md:pt-20 md:pb-28">
       <div>
         {/* The detection box around my name, with its label tag on the top-left corner */}
-        <div className="relative inline-block mt-9 border-[3px] border-box px-5 pt-4 pb-3 md:px-7">
-          <span className="absolute -left-[3px] -top-[34px] bg-box text-bg font-bold text-base md:text-lg px-3 py-1">
-            data scientist
-          </span>
-          <h1 className="text-5xl md:text-[88px] leading-[0.95] font-extrabold tracking-[-0.035em]">
-            Shadaab
-            <br />
-            Hasan
-          </h1>
-        </div>
+                <h1 className="text-5xl md:text-[88px] leading-[0.95] font-extrabold tracking-[-0.035em]">
+          Shadaab
+          <br />
+          Hasan
+        </h1>
+        <p className="mt-4 text-xl md:text-2xl font-semibold text-box">Data scientist</p>
 
         <p className="mt-10 max-w-[30em] text-lg md:text-xl text-soft">
           I build machine learning models for images and text, and I check that their results hold up.
