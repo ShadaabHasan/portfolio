@@ -7,8 +7,8 @@ const FeaturedProjects = () => {
   const featured = projects.filter((project) => project.featured);
 
   return (
-    <section id="featuredproj" className="border-t border-line pt-16 md:pt-20 scroll-mt-16">
-      <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Projects</h2>
+    <section id="featuredproj" className="px-[4vw] pt-24 md:pt-32 pb-20 border-t border-line">
+      <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Selected work</h2>
 
       <div className="mt-4">
         {featured.map((project) => (

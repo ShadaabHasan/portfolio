@@ -12,9 +12,9 @@
   --muted: #6E6553;
   --line: #D9CBAA;
   --box: #2B4BE0;
-  --note: #FFF7D1;
-  --note-line: #E6BE2E;
-  --note-ink: #3A3216;
+    --note: #E6D9BC;
+  --note-line: #2B4BE0;
+  --note-ink: #3B362C;
   color-scheme: light;
 }
 

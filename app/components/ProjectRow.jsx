@@ -2,8 +2,7 @@
 // It receives ONE project from data/projects.js.
 export default function ProjectRow({ project }) {
   return (
-    <article className="grid md:grid-cols-[420px_1fr] gap-5 md:gap-12 py-10 border-b border-line items-start">
-      {/* box-corners draws the blue detection-box corners (see globals.css) */}
+        <article className="grid md:grid-cols-[minmax(320px,40%)_1fr] gap-5 md:gap-14 py-12 border-b border-line items-start">  {/* box-corners draws the blue detection-box corners (see globals.css) */}
       <div className="box-corners relative aspect-[16/10] overflow-hidden bg-panel">
         <img src={project.image} alt="" loading="lazy" className="w-full h-full object-cover" />
       </div>
