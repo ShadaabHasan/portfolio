@@ -9,8 +9,8 @@ import ThemeToggle from "./ThemeToggle";
 const links = [
   { label: "Projects", href: "/AllProjects" },
   { label: "About", href: "/AboutMe" },
+  { label: "Contact", href: "#contact" },
   { label: "CV", href: "/Shadaab_resume.pdf", external: true },
-  { label: "Contact", href: "/Contact" },
 ];
 
 function NavLink({ link, className, onClick }) {
@@ -34,31 +34,28 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="sticky top-0 z-50 bg-bg border-b border-line">
-        <div className="max-w-[1240px] mx-auto px-5 md:px-10 h-16 flex items-center justify-between">
-          <Link href="/" className="font-bold text-ink">
-            Shadaab Hasan
-          </Link>
+      <nav className="px-[4vw] py-8 grid grid-cols-[1fr_auto] md:grid-cols-[1fr_auto_1fr] items-center">
+        <Link href="/" className="font-extrabold text-[22px] tracking-[-0.04em] text-ink">
+          SH
+        </Link>
 
-          {/* Desktop menu */}
-          <div className="hidden md:flex items-center gap-8">
-            {links.map((link) => (
-              <NavLink key={link.label} link={link} className="text-muted hover:text-ink transition-colors" />
-            ))}
-            <ThemeToggle />
-          </div>
+        {/* Desktop links, in the middle */}
+        <div className="hidden md:flex items-center gap-10 text-[17px]">
+          {links.map((link) => (
+            <NavLink key={link.label} link={link} className="text-muted hover:text-ink transition-colors" />
+          ))}
+        </div>
 
-          {/* Mobile: theme switch + menu button */}
-          <div className="flex md:hidden items-center gap-2">
-            <ThemeToggle />
-            <button
-              className="w-10 h-10 flex items-center justify-center text-ink text-2xl"
-              onClick={() => setIsOpen(true)}
-              aria-label="Open menu"
-            >
-              ☰
-            </button>
-          </div>
+        {/* Right side: theme switch, plus the menu button on phones */}
+        <div className="justify-self-end flex items-center gap-2">
+          <ThemeToggle />
+          <button
+            className="md:hidden w-10 h-10 flex items-center justify-center text-ink text-2xl"
+            onClick={() => setIsOpen(true)}
+            aria-label="Open menu"
+          >
+            ☰
+          </button>
         </div>
       </nav>
 
@@ -70,10 +67,10 @@ const Navbar = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="fixed inset-0 z-50 bg-bg flex flex-col"
+            className="fixed inset-0 z-50 bg-bg flex flex-col px-[4vw]"
           >
-            <div className="h-16 px-5 flex items-center justify-between border-b border-line">
-              <span className="font-bold text-ink">Shadaab Hasan</span>
+            <div className="py-8 flex items-center justify-between">
+              <span className="font-extrabold text-[22px] tracking-[-0.04em] text-ink">SH</span>
               <button
                 className="w-10 h-10 flex items-center justify-center text-ink text-2xl"
                 onClick={() => setIsOpen(false)}
@@ -82,7 +79,7 @@ const Navbar = () => {
                 ✕
               </button>
             </div>
-            <div className="flex flex-col gap-6 px-5 pt-10 text-3xl font-semibold">
+            <div className="flex flex-col gap-6 pt-8 text-4xl font-bold tracking-tight">
               {links.map((link) => (
                 <NavLink key={link.label} link={link} className="text-ink" onClick={() => setIsOpen(false)} />
               ))}
