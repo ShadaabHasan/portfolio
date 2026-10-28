@@ -1,52 +1,24 @@
-import Image from "next/image";
-
-// The top of the Home page: my name in a detection box, and real results from my model
+// The first screen: headline, a small info line, and my name across the full width
 export default function Hero() {
   return (
-    <section className="grid md:grid-cols-[1.05fr_1fr] gap-12 md:gap-16 items-center pt-12 pb-16 md:pt-20 md:pb-28">
-      <div>
-        {/* The detection box around my name, with its label tag on the top-left corner */}
-                <h1 className="text-5xl md:text-[88px] leading-[0.95] font-extrabold tracking-[-0.035em]">
-          Shadaab
-          <br />
-          Hasan
-        </h1>
-        <p className="mt-4 text-xl md:text-2xl font-semibold text-box">Data scientist</p>
-
-        <p className="mt-10 max-w-[30em] text-lg md:text-xl text-soft">
-          I build machine learning models for images and text, and I check that their results hold up.
-          M.Sc. in Computer Science (Data Analytics), University of Galway. Based in Galway.
+    <section className="min-h-[calc(100svh-104px)] px-[4vw] flex flex-col overflow-hidden">
+      <div className="flex-1 grid md:grid-cols-[1.1fr_1fr] gap-10 pt-[6vh] md:pt-[9vh]">
+        <p className="text-[clamp(30px,3.6vw,54px)] leading-[1.22] font-medium tracking-[-0.02em] max-w-[17em]">
+          I train models that find and follow objects in images, then I check that their results really hold up.
         </p>
 
-        <div className="mt-9 flex flex-wrap gap-3">
-          <a href="#featuredproj" className="px-6 py-3.5 font-semibold border-2 border-ink bg-ink text-bg">
-            See my projects
-          </a>
-          <a
-            href="/Shadaab_resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-6 py-3.5 font-semibold border-2 border-ink"
-          >
-            Download CV
-          </a>
-        </div>
+        <p className="md:col-start-2 self-end flex flex-wrap md:justify-end gap-x-7 gap-y-2 pb-[2vh] text-[13px] md:text-[15px] font-semibold uppercase tracking-[0.02em]">
+          <span>Data scientist</span>
+          <span className="text-muted font-normal">+</span>
+          <span>M.Sc. Data Analytics</span>
+          <span className="text-muted font-normal">+</span>
+          <span>Galway, Ireland</span>
+        </p>
       </div>
 
-      <figure>
-        <Image
-          src="/projects/object-tracking.jpg"
-          alt="A grid of photos with coloured boxes and labels such as car, horse and person, drawn by my YOLO11n model"
-          width={1920}
-          height={1280}
-          priority
-          sizes="(min-width: 768px) 50vw, 100vw"
-          className="w-full h-auto border border-line"
-        />
-        <figcaption className="mt-3 text-sm text-muted">
-          Detections from my YOLO11n model on Pascal VOC test images.
-        </figcaption>
-      </figure>
+      <h1 className="font-extrabold tracking-[-0.055em] leading-[0.88] text-[24vw] md:text-[13.4vw] md:whitespace-nowrap -mx-[0.03em] pb-[3vh]">
+        Shadaab Hasan
+      </h1>
     </section>
   );
 }
