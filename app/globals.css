@@ -2,24 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Colour themes */
 
-/* Light mode (default) */
+/* Light mode (the default): old paperback */
 :root {
-        --bg: #F1E6CC;
+  --bg: #F1E6CC;
   --panel: #E6D9BC;
   --ink: #1E1B15;
   --soft: #3B362C;
   --muted: #6E6553;
   --line: #D9CBAA;
   --box: #2B4BE0;
-    --note: #E6D9BC;
+  --note: #E6D9BC;
   --note-line: #2B4BE0;
   --note-ink: #3B362C;
   color-scheme: light;
 }
 
- /* Dark mode: used when the switch is set to dark, */
-
+/* Dark mode: used when the switch is set to dark */
 [data-theme="dark"] {
   --bg: #121A24;
   --panel: #18222E;
@@ -28,227 +28,28 @@
   --muted: #8592A3;
   --box: #6F8CFF;
   --line: #2A3646;
-  --note: #2A2617;
-  --note-line: #D9B23F;
-  --note-ink: #E9DFC0;
+  --note: #18222E;
+  --note-line: #6F8CFF;
+  --note-ink: #B7C0CC;
   color-scheme: dark;
 }
 
-.main-section {
-    display: flex;
-    flex-direction: row;
-    /* align-items: start;
-    justify-content: start; */
-    min-height: 610px;
-    padding: 0px;
-    /* width: 1/2; */
+/* Scrollbar */
+/* Thin, and uses the theme colours so it matches both modes */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--muted) var(--bg);
 }
-
-.main-section1 {
-    display: flex;
-    flex-direction: row;
-    /* align-items: start;
-    justify-content: start; */
-    /* min-height: 610px; */
-    padding: 0px;
-    /* width: 1/2; */
-}
-
-.main-section-scroll {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* min-height: 105vh; */
-    padding: 0px;
-}
-
-/* .main-section-image{
-    display: flex;
-    align-items: end;
-    justify-content: end;
-} */
-
 ::-webkit-scrollbar {
-    width: 5px;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: rgb(73, 73, 73); /* Slightly transparent */
-    border-radius: 10px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    /* background: rgb(72, 97, 81); */
-    background: grey;
-  }
-
-  /* .projects-page ::-webkit-scrollbar-thumb {
-    background: #50040f; 
-  } */
-  
-  /* Contact Page Scrollbar */
-  /* .contact-page ::-webkit-scrollbar-thumb {
-    background: #3357ff; Blue
-  } */
-  
-  .total-bg{
-    background-color: #00261c;
-  }
-
-
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 25px;
-    background-color: #1d25b9;
-    color: #000000;
-    font-size: 1rem;
-    font-weight: bold;
-    text-align: center;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
-    margin-top: 20px;
-    transition: background-color 0.3s ease;
+  width: 6px;
 }
-
-.btn:hover {
-    background-color: #0f6f56;
+::-webkit-scrollbar-thumb {
+  background: var(--muted);
+  border-radius: 10px;
 }
-
-.btn-primary {
-    background-color: white;
-    color: #000000;
-    margin-right: 7px;
+::-webkit-scrollbar-track {
+  background: var(--bg);
 }
-
-
-.btn-primary:hover {
-    background-color: #0f6f56;
-    color: white;
-}
-
-.btn-secondary {
-    background-color: #6c757d;
-    color: #ffffff;
-}
-
-.btn-secondary-contact {
-    background-color: #6c757d;
-    color: #ffffff;
-}
-
-.btn-secondary-contact:hover {
-    background-color: #931095;
-    
-}
-
-.btn-secondary:hover {
-    background-color: #37393b;
-    
-}
-
-.btn-secondary-resume {
-    background-color: #6c757d;
-    color: #ffffff;
-    /* margin-left: 7px; */
-}
-
-.btn-secondary-resume-contact {
-    background-color: #6c757d;
-    color: #ffffff;
-}
-
-.btn-secondary-resume:hover {
-    background-color: #37393b;
-    
-}
-
-.padding-bottom-background{
-    padding-bottom: 6px;
-}
-
-.padding-top-portfolio-project{
-    padding-top: 20px;
-}
-
-.padding-top-portfolio-button{
-    padding-bottom  : 50px;
-}
-
-.grey{
-    color: #a1a1aa;
-}
-
-.displayblock{
-    display: block;
-    margin: auto;
-}
-
-.pointer {
-    cursor: pointer;
-}
-
-.color-test{
-    color: white;
-}
-
-.red-footer{
-    background-color: #410511;
-}
-
-.purple-footer{
-    background-color: #390140;
-}
-
-.black-footer{
-    background-color: #000000;
-}
-
-.padding-top-aboutme{
-    padding-top: 110px;
-}
-
-.padding-top-featuredproj{
-    padding-top: 110px;
-}
-
-.bg-green{
-    background-color:rgb(0, 38, 28);
-    opacity: 0.5;
-}
-
-.padding-left-contact{
-    padding-left: 10.5rem;
-    margin-right: 30rem;
-}
-
-.padding-top-project{
-    padding-top: 7rem;
-}
-
-@keyframes animate {
-    0% {
-        stroke-dashoffset: 0
-    }
-
-    to {
-        stroke-dashoffset: 12433.8193359375
-    }
-}
-
-@keyframes pulse {
-    50% {
-        opacity: .5
-    }
-}
-
-.path {
-    stroke-dasharray: 500px 100px;
-    animation: animate 100s linear infinite alternate-reverse
-}
-
 
 /* Detection-box corners on project images */
 .box-corners::before,
@@ -262,7 +63,9 @@
 }
 .box-corners::before { left: 8px; top: 8px; border-right: 0; border-bottom: 0; }
 .box-corners::after { right: 8px; bottom: 8px; border-left: 0; border-top: 0; }
-/* Contact panel: swaps the page colours, so it's dark in light mode and light in dark mode */
+
+/* Contact panel */
+/* Swaps the page colours, so it's dark in light mode and light in dark mode */
 .contact-panel {
   background: var(--ink);
   color: var(--bg);
