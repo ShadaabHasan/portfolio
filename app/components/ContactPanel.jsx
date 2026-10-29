@@ -37,7 +37,7 @@ export default function ContactPanel() {
   }
 
   return (
-    <section id="contact" className="contact-panel sticky bottom-0 z-0 min-h-[100svh] px-[4vw] pt-8 pb-7 flex flex-col">
+    <section className="contact-panel sticky bottom-0 z-0 min-h-[100svh] px-[4vw] pt-8 pb-7 flex flex-col">
       <div className="flex flex-col md:flex-row md:justify-between gap-1 text-[15px] opacity-60">
         <span>Galway, Ireland{time && ` · ${time}`}</span>
         <span>Open to data scientist roles</span>

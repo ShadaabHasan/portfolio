@@ -30,7 +30,9 @@ export default function RootLayout({ children }) {
           <div className="relative z-10 bg-bg shadow-[0_30px_60px_rgba(0,0,0,0.15)]">
             <Navbar />
             {children}
-          </div>
+                    </div>
+          {/* Scroll target for "#contact": sits right where the page ends, so jumping here uncovers the panel */}
+          <div id="contact" aria-hidden="true" />
           <ContactPanel />
         </ThemeProvider>
         <Analytics />
