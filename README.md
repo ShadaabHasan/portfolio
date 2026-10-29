@@ -1,20 +1,43 @@
 # Shadaab Hasan – Portfolio
 
-My personal portfolio website, built with **Next.js** and deployed on **Vercel**.
+My personal portfolio website, built with **Next.js** and **Tailwind CSS**, and deployed on **Vercel**.
 
 🔗 **Live site:** [shadaabhasan.vercel.app](https://shadaabhasan.vercel.app)
 
 ## Features
 
-- About, Projects and Contact pages
-- All projects stored in one data file (`data/projects.js`), shown with a reusable card component
-- Contact form with checks in the browser and on the server, saving messages to Firebase Firestore
+- **Light and dark themes:** opens in light mode, with a switch for dark mode that remembers your choice
+- **One data file for all projects:** every project lives in `data/projects.js` and is drawn by a single `ProjectRow` component, so adding a project means adding a few lines of data
+- **Contact panel with a curtain reveal:** the page slides away at the end to uncover the contact details, using only CSS (`position: sticky` and layers), with a live Galway clock and a "Copy email" button
+- **Generated link preview:** the image shown on LinkedIn and WhatsApp is built from code (`app/opengraph-image.js`) in the site's own font
+- **Fully static:** every page is built ahead of time, so there's no server code and no secrets to manage
 
 ## Tech stack
 
-- **Frontend:** Next.js 16 (App Router), React 19, Tailwind CSS, Framer Motion
-- **Backend:** Next.js API route + Firebase Admin (Firestore)
+- **Framework:** Next.js 16 (App Router), React 19
+- **Styling:** Tailwind CSS, with colours stored as CSS variables for the two themes
+- **Font:** Plus Jakarta Sans (via `next/font`)
+- **Other:** next-themes (theme switching), Framer Motion (mobile menu)
 - **Deployment:** Vercel
+
+## Project structure
+
+```
+app/
+  page.js              Home page
+  AboutMe/page.js      About page (education, publication, certifications, skills)
+  AllProjects/page.js  All projects
+  components/          Navbar, Hero, ProjectRow, ContactPanel, theme switch
+  fonts/               Font files for the link preview image
+  opengraph-image.js   Link preview image
+  globals.css          Colour themes and a few custom styles
+data/
+  projects.js          All project details
+public/
+  Shadaab_resume.pdf   CV
+  certificates/        Certificate PDFs
+  projects/            Project images
+```
 
 ## Running it locally
 
@@ -22,12 +45,11 @@ My personal portfolio website, built with **Next.js** and deployed on **Vercel**
    ```bash
    npm install
    ```
-2. Create a `.env.local` file in the main folder with your Firebase service account key: FIREBASE_ADMIN_KEY='{“type”:”service_account”, ...}'
-3. Start the development server:
+2. Start the development server:
    ```bash
    npm run dev
    ```
-4. Open [http://localhost:3000](http://localhost:3000).
+3. Open [http://localhost:3000](http://localhost:3000).
 
 ## Contact
 
